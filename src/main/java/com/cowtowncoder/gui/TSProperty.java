@@ -83,11 +83,10 @@ TSProperty
 	properties = p;
     }
 
-    /*** Simple get- & set-functions and alike: ***/
+    // // // Simple get- & set-functions and alike:
 
     // Returns 'true' if setting succeeded:
-    public boolean
-    setValue(Object new_val, Object changer)
+    public boolean setValue(Object new_val, Object changer)
     {
 	Object old = value;
 
@@ -181,10 +180,9 @@ TSProperty
 	return (properties & P_SAVEABLE) != 0;
     }
 
-    /*** Functions for adding/removing & accessing listeners: ***/
+    // // // Functions for adding/removing & accessing listeners:
 
-    public void
-    addListener(Object x, int f)
+    public void addListener(Object x, int f)
     {
 	// Should we check for duplicate listener entries?
 	// Well, we'll do it: 
@@ -208,8 +206,7 @@ TSProperty
 	listeners = new TSPropertyListElement(x, f, listeners);
     }
 
-    public boolean
-    removeListener(Object x)
+    public boolean removeListener(Object x)
     {
 	TSPropertyListElement el = listeners, last = null;
 
@@ -233,8 +230,7 @@ TSProperty
 
     /*** And functions for loading/saving/restoring property values: ***/
 
-    public boolean
-    resetValue(Object changer)
+    public boolean resetValue(Object changer)
     {
 	return setValue(defaultValue, changer);
     }
@@ -245,8 +241,7 @@ TSProperty
     // such as number or boolean value), that is the reason why we need
     // some heuristics here. In addition, Strings are saved in URL-encoded
     // form, so decoding is needed:
-    public void
-    loadValue(Object saved_value)
+    public void loadValue(Object saved_value)
     {
 	// Yuck...
 	if (saved_value instanceof LoadedDef) {
@@ -340,8 +335,7 @@ TSProperty
 +"(def value is of type "+defaultValue.getClass()+").\n");
     }
 
-    public String
-    saveValue()
+    public String saveValue()
     {
 	if (defaultValue instanceof String)
 	    return "\"" + URLEncoder.encode((String) value)+ "\"";

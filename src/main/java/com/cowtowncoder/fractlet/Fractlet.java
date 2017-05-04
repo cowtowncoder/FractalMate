@@ -60,11 +60,9 @@ import java.awt.*;
 import java.applet.*;
 import java.awt.event.*;
 import java.io.*;
-import java.net.*;
 import java.util.*;
 
 import com.cowtowncoder.ext.PNGSaver;
-import com.cowtowncoder.ext.PlatformSpecific;
 import com.cowtowncoder.gui.*;
 import com.cowtowncoder.io.LoadedDef;
 import com.cowtowncoder.util.TSArray;
@@ -296,8 +294,8 @@ public final class Fractlet
   /* Doh... the layout construction is tedious and error-prone with
    * AWT. The resulting code is horrible. :-/
    */
-  public void
-  init()
+  @Override
+  public void init()
   {
       if (!isApplet) {
 	  frame = new Frame(DEF_TITLE);
@@ -714,8 +712,8 @@ public final class Fractlet
 			   TSProperty.LISTEN_SYNC_VALUE);
   }
 
-  public void
-  start()
+  @Override
+  public void start()
   {
     fCanvas.initPatterns();
     fCanvas.repaint();
@@ -734,9 +732,10 @@ public final class Fractlet
     }
   }
 
-  /**** ActionListener: ****/
-  public void
-  actionPerformed(ActionEvent e)
+  // ActionListener
+
+  @Override
+  public void actionPerformed(ActionEvent e)
   {
       Component c = (Component) e.getSource();
 
@@ -786,8 +785,8 @@ public final class Fractlet
 
   /**** ItemListener: ****/
 
-  public void
-  itemStateChanged(ItemEvent e)
+  @Override
+  public void itemStateChanged(ItemEvent e)
   {
       Component c = (Component) e.getSource();
       int change = e.getStateChange();
@@ -845,9 +844,9 @@ public final class Fractlet
       }
   }
 
-  /**** AdjustmentListener: ****/
-  public void
-  adjustmentValueChanged(AdjustmentEvent e)
+  // // AdjustmentListener:
+  @Override
+  public void adjustmentValueChanged(AdjustmentEvent e)
   {
       Component c = (Component) e.getSource();
 
@@ -860,10 +859,10 @@ public final class Fractlet
       }
   }
 
-  /**** TSPListener: ****/
+  // // TSPListener
 
-  public void
-  TSPChanged(String name, Object old_value, Object new_value)
+  @Override
+  public void TSPChanged(String name, Object old_value, Object new_value)
   {
       int i;
 
@@ -934,8 +933,7 @@ public final class Fractlet
 
   public boolean isApplet() { return isApplet; }
 
-  public Hashtable
-  initMenus(Frame f, Object [] defs)
+  public Hashtable initMenus(Frame f, Object [] defs)
   {
       MenuBar mb = new MenuBar();
       Menu last_menu = null;
@@ -1852,13 +1850,14 @@ FRACTLET_VERSION+", Last changed 12-Nov-1999, TSa",
       fCanvas.requestFocus();
   }
 
-  /** FocusListener implementation: **/
+  // // FocusListener implementation:
+
   // A kludge, sole purpose to make the damn canvas get the #��&%�%/
   // focus right away, so it can catch the key presses.
   protected boolean focus_init_done = false;
 
-  public void
-  focusGained(FocusEvent e)
+  @Override
+  public void focusGained(FocusEvent e)
   {
       if (e.isTemporary())
 	  return;
@@ -1869,10 +1868,8 @@ FRACTLET_VERSION+", Last changed 12-Nov-1999, TSa",
       }
   }
 
-  public void
-  focusLost(FocusEvent e)
-  {
-  }
+  @Override
+  public void  focusLost(FocusEvent e) { }
 
   /** Then various helper functions: **/
   public LoadedDef

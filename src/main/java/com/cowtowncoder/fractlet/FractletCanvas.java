@@ -47,19 +47,15 @@ Changes:
 package com.cowtowncoder.fractlet;
 
 import java.awt.*;
-import java.applet.*;
 import java.awt.event.*;
 import java.io.*;
 import java.net.*;
 import java.util.*;
 
-import com.cowtowncoder.gui.TSProperty;
-import com.cowtowncoder.gui.TSProperties;
 import com.cowtowncoder.io.Loader;
 import com.cowtowncoder.io.LoadedDef;
 
-public final class
-FractletCanvas
+public final class FractletCanvas
 extends
     Canvas
 implements
@@ -2816,13 +2812,13 @@ implements
       // Here we'd check the version compatibility...
       if (ver != null) {
 	  if (!(ver instanceof String)) {
-System.err.println("Loading fractal image, version weird: '"+ver+"'");
+//System.err.println("Loading fractal image, version weird: '"+ver+"'");
 	  } else {
 	      String ve = (String) ver;
-System.err.println("Loading fractal image, saved by Fractlet version "+ve);
+//System.err.println("Loading fractal image, saved by Fractlet version "+ve);
 	  }
       } else {
-System.err.println("Loading fractal image, saved by Fractlet version: <unknown>");
+//System.err.println("Loading fractal image, saved by Fractlet version: <unknown>");
       }
 
       return def;

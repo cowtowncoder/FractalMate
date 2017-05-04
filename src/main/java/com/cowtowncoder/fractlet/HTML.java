@@ -1187,8 +1187,9 @@ System.err.println(" ("+(force ? "forced" : "normal")+") took "+time+" ms.");
 	//System.err.println("Paint took "+time+" ms.");
     }
 
-    /*** MouseListener & MouseMotionListener ****/
+    // // //  MouseListener & MouseMotionListener
 
+    @Override
     public void mouseClicked(MouseEvent ev) {
 
 	if (chosenLink == null)
@@ -1212,23 +1213,24 @@ System.err.println(" ("+(force ? "forced" : "normal")+") took "+time+" ms.");
 		return;
 	    }
 	}
-    } 
-    
-    public void mouseEntered(MouseEvent e) {
     }
     
-    public void mouseExited(MouseEvent e) {
-    }
+    @Override
+    public void mouseEntered(MouseEvent e) { }
     
-    public void mousePressed(MouseEvent e) {
-    }
+    @Override
+    public void mouseExited(MouseEvent e) { }
+    
+    @Override
+    public void mousePressed(MouseEvent e) { }
 
-    public void mouseReleased(MouseEvent e) {
-    }
+    @Override
+    public void mouseReleased(MouseEvent e) { }
     
-    public void mouseDragged(MouseEvent e) {
-    }
+    @Override
+    public void mouseDragged(MouseEvent e) { }
     
+    @Override
     public void mouseMoved(MouseEvent e) {
 
 	if (pageLoading) {

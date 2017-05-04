@@ -39,15 +39,16 @@ import com.cowtowncoder.ext.PlatformSpecific;
 
 import java.awt.*;
 
-public class
-NamedPanel
+public class NamedPanel
     //extends Container
 extends Panel
 {
-    String name;
-    int fontX, fontY, fontBase, nameWidth;
-    Color foreground, background, bgDark, bgBright;
-    Color titleColour, titleShadow;
+    private static final long serialVersionUID = 1L;
+
+    protected String name;
+    protected int fontX, fontY, fontBase, nameWidth;
+    protected Color foreground, background, bgDark, bgBright;
+    protected Color titleColour, titleShadow;
     
     protected Insets myInsets = null;
 
@@ -89,19 +90,17 @@ extends Panel
 	myInsets = i;
     }
 
-    /*** Then some functions defined by Component & Container, that
-     *   we need to mask:
-     */
+    // // // Then some functions defined by Component & Container, that
 
-    public void
-    setForeground(Color c)
+    @Override
+    public void setForeground(Color c)
     {
 	super.setForeground(c);
 	foreground = c;
     }
 
-    public void
-    setBackground(Color c)
+    @Override
+    public void setBackground(Color c)
     {
 	super.setBackground(c);
 	background = c;
@@ -109,15 +108,15 @@ extends Panel
 	bgBright = c.brighter();
     }
 
-    public void
-    setName(String s)
+    @Override
+    public void setName(String s)
     {
 	fontX = fontY = fontBase = -1;
 	name = s;
     }       
 
-    public Insets
-    getInsets()
+    @Override
+    public Insets getInsets()
     {
 	if (fontX < 0)
 	    initSize();
@@ -145,8 +144,8 @@ extends Panel
 	nameWidth = fm.stringWidth(name);
     }
 
-    public void
-    paint(Graphics g)
+    @Override
+    public void paint(Graphics g)
     {
 	if (fontX < 0)
 	    initSize();

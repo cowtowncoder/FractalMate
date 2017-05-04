@@ -115,40 +115,34 @@ public class FractletProperties
 	addProperty(FP_PREVIEW_MAX_TIME, new Double(1.0), 0);
     }
 
-    /*** Saving & loading: ***/
+    // Saving and loading:
 
-    public void
-    saveTo(PrintWriter out)
+    public void saveTo(PrintWriter out)
     {
-	Enumeration en = TSProps.keys();
-
-	while (en.hasMoreElements()) {
-	    String key = (String) en.nextElement();
-	    TSProperty value = (TSProperty) TSProps.get(key);
-	    if ((value.properties & TSProperty.P_SAVEABLE) == 0)
-		continue;
+        for (Map.Entry<String,TSProperty> entry : _properties.entrySet()) {
+	    TSProperty value = entry.getValue();
+	    if ((value.properties & TSProperty.P_SAVEABLE) == 0) {
+	        continue;
+	    }
 	    out.print("\t");
-	    out.print(key);
+	    out.print(entry.getKey());
 	    out.print(" = ");
 	    out.print(value.saveValue());
 	    out.println(";");
 	}
     }
 
-    public boolean
-    loadFrom(LoadedDef data)
+    public boolean loadFrom(LoadedDef data)
     {
 	if (!data.containsList()) {
 	    return false;
 	}
-	Enumeration en = TSProps.keys();
-
-	while (en.hasMoreElements()) {
-	    String key = (String) en.nextElement();
-	    TSProperty value = (TSProperty) TSProps.get(key);
-	    if ((value.properties & TSProperty.P_SAVEABLE) == 0) {
-		continue;
-	    }
+     for (Map.Entry<String,TSProperty> entry : _properties.entrySet()) {
+         TSProperty value = entry.getValue();
+         if ((value.properties & TSProperty.P_SAVEABLE) == 0) {
+             continue;
+         }
+         String key = entry.getKey();
 	    LoadedDef d = data.findAssignmentValueFor(key, false, false);
 	    if (d != null) {
 		value.loadValue(d);

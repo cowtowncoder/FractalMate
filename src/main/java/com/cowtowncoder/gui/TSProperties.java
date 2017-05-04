@@ -41,89 +41,74 @@ import java.util.*;
 
 public class TSProperties
 {
-    protected Hashtable TSProps;
+    protected HashMap<String,TSProperty> _properties;
 
-    public
-    TSProperties()
+    public TSProperties()
     {
-	TSProps = new Hashtable();
+        _properties = new HashMap<>();
     }
 
- /*** Basic functions for creating and accessing the properties: ***/
+    // Basic functions for creating and accessing the properties:
 
     public void addProperty(String name, Object def_val, int props)
     {
-	TSProperty p = new TSProperty(name, def_val, props);
-
-	TSProps.put(name, p);
+        _properties.put(name, new TSProperty(name, def_val, props));
     }
 
     public boolean setValue(String name, Object value, Object changer)
     {
-	TSProperty t = (TSProperty) TSProps.get(name);
-
-	if (t == null)
-	    return false;
-
-	return t.setValue(value, changer);
+        TSProperty t = _properties.get(name);
+        if (t == null) {
+            return false;
+        }
+        return t.setValue(value, changer);
     }
  
-    public String
-    saveVealue(String name)
+    public String saveVealue(String name)
     {
-	TSProperty t = (TSProperty) TSProps.get(name);
-
-	return (t == null) ? null : t.saveValue();
+        TSProperty t = _properties.get(name);
+        return (t == null) ? null : t.saveValue();
     }
  
-    public boolean
-    resetValue(String name, Object changer)
+    public boolean resetValue(String name, Object changer)
     {
-	TSProperty t = (TSProperty) TSProps.get(name);
-
-	if (t == null)
-	    return false;
-
-	return t.resetValue(changer);
+        TSProperty t = _properties.get(name);
+        if (t == null) {
+            return false;
+        }
+        return t.resetValue(changer);
     }
 
-    public Object
-    getValue(String name)
+    public Object getValue(String name)
     {
-	TSProperty t = (TSProperty) TSProps.get(name);
-
-	if (t == null)
-	    return null;
-
-	return t.getValue();
+        TSProperty t = _properties.get(name);
+        if (t == null) {
+            return null;
+        }
+        return t.getValue();
     }
 
-    public void
-    loadValue(String name, Object saved_value)
+    public void loadValue(String name, Object saved_value)
     {
-	TSProperty t = (TSProperty) TSProps.get(name);
-	if (t != null)
-	    t.loadValue(saved_value);
+        TSProperty t = _properties.get(name);
+        if (t != null) {
+            t.loadValue(saved_value);
+        }
     }
 
     // This function resets all saveable properties to their 
-    synchronized public void
-    resetAllSaveable(Object changer)
+    synchronized public void resetAllSaveable(Object changer)
     {
-	Enumeration en = TSProps.elements();
-
-	while (en.hasMoreElements()) {
-	    TSProperty t = (TSProperty) en.nextElement();
-	    if (t.isSaveable()) {
-		t.resetValue(changer);
-	    }
-	}
+        for (TSProperty prop : _properties.values()) {
+            if (prop.isSaveable()) {
+                prop.resetValue(changer);
+            }
+        }
     }
 
-/*** And derived convenience functions: ***/
+    // And derived convenience functions
 
-    public boolean
-    getBooleanValue(String name)
+    public boolean getBooleanValue(String name)
     {
 	Object x = getValue(name);
 
@@ -133,8 +118,7 @@ public class TSProperties
 	return ((Boolean) x).booleanValue();
     }
 
-    public int
-    getIntValue(String name)
+    public int getIntValue(String name)
     {
 	Object x = getValue(name);
 
@@ -144,8 +128,7 @@ public class TSProperties
 	return ((Number) x).intValue();
     }
 
-    public double
-    getDoubleValue(String name)
+    public double getDoubleValue(String name)
     {
 	Object x = getValue(name);
 
@@ -155,8 +138,7 @@ public class TSProperties
 	return ((Double) x).doubleValue();
     }
 
-    public String
-    getStringValue(String name)
+    public String getStringValue(String name)
     {
 	Object x = getValue(name);
 
@@ -173,8 +155,7 @@ public class TSProperties
 	return setValue(name, new Boolean(state), changer);
     }
 
-    public boolean
-    toggleBooleanValue(String name, Object changer)
+    public boolean toggleBooleanValue(String name, Object changer)
     {
 	Object x = getValue(name);
 
@@ -185,14 +166,12 @@ public class TSProperties
 			changer);
     }
 
-    public boolean
-    setIntValue(String name, int state, Object changer)
+    public boolean setIntValue(String name, int state, Object changer)
     {
 	return setValue(name, new Integer(state), changer);
     }
 
-    public boolean
-    setDoubleValue(String name, double val, Object changer)
+    public boolean setDoubleValue(String name, double val, Object changer)
     {
 	return setValue(name, new Double(val), changer);
     }
@@ -201,12 +180,11 @@ public class TSProperties
     // normal objects... For orthogonality, it might be
     // included though?
 
-    /*** We also need to attach listeners for properties: ***/
+    // We also need to attach listeners for properties:
     
-    public void
-    addListener(String name, Object x, int f)
+    public void addListener(String name, Object x, int f)
     {
-	TSProperty t = (TSProperty) TSProps.get(name);
+	TSProperty t = (TSProperty) _properties.get(name);
 
 	if (t == null)
 	    return;
@@ -214,18 +192,15 @@ public class TSProperties
 	t.addListener(x, f);
     }
 
-/*** Then various other utility functions: ***/
+    // Then various other utility functions:
 
-    public String
-    toString()
+    @Override
+    public String toString()
     {
-	Enumeration en = TSProps.keys();
+	StringBuffer buf = new StringBuffer(_properties.size() * 40);
 
-	StringBuffer buf = new StringBuffer(TSProps.size() * 40);
-
-	while (en.hasMoreElements()) {
-	    String key = (String) en.nextElement();
-	    TSProperty value = (TSProperty) TSProps.get(key);
+	for (String key : _properties.keySet()) {
+	    TSProperty value = (TSProperty) _properties.get(key);
 	    buf.append(key);
 	    buf.append(" = ");
 	    buf.append(value.value.toString());

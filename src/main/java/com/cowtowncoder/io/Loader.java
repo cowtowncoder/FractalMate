@@ -37,8 +37,7 @@ package com.cowtowncoder.io;
 import java.io.*;
 import java.util.*;
 
-public class
-Loader
+public class Loader
 {
     public final static int F_REQUIRE_MATCHING_DELIMS = 0x0001;
     public final static int F_STRICT_DELIMS = 0x0001;
@@ -68,31 +67,28 @@ Loader
       tokenizer.ordinaryChar('/');
     }
 
-    public LoadedDef
-    loadNextTaggedDef(String tag, Hashtable args, boolean do_close)
-	throws IOException
+    public LoadedDef loadNextTaggedDef(String tag, Hashtable args, boolean do_close)
+            throws IOException
     {
-	loadTag(tag, args);
-	return loadContents(tag, do_close);
+        loadTag(tag, args);
+        return loadContents(tag, do_close);
     }
 
- /******************************************************
-
-  First part of the functionality is for reading in
-  definitions enclosed by HTML-tags:
-
- ******************************************************/   
-
-    /** loadTag() searches for next (opening) tag 'tag', and
-     * fills the given hash table with its possible arguments
-     * (for example, <TAG arg1=value> would contain one key-value - pair)
+    /*
+    /**********************************************************************
+    /* First part of the functionality is for reading in
+    /* definitions enclosed by HTML-tags:
+    /**********************************************************************
      */
-    public void
-    loadTag(String tag, Hashtable args)
-	throws IOException
-    {
-      int type;
 
+    /**
+     * loadTag() searches for next (opening) tag 'tag', and
+     * fills the given hash table with its possible arguments
+     * (for example, {@code <TAG arg1=value> } would contain one key-value - pair)
+     */
+    public void loadTag(String tag, Hashtable args)
+        throws IOException
+    {
       Vector seq = loadNextTagSequence(tokenizer, tag);
 
       // If begin-tag isn't found, we fail:
