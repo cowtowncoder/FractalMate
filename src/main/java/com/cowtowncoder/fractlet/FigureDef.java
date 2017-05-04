@@ -27,17 +27,16 @@ Changes:
 
 ***************************************/
 
-package ts.fractlet;
-
-import ts.ext.PlatformSpecific;
-
-import ts.gui.ClosableDialog;
+package com.cowtowncoder.fractlet;
 
 import java.awt.*;
-import java.awt.event.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public final class
-FigureDef
+import com.cowtowncoder.ext.PlatformSpecific;
+import com.cowtowncoder.gui.ClosableDialog;
+
+public final class FigureDef
     extends ClosableDialog
     implements ActionListener
 {
@@ -129,8 +128,8 @@ FigureDef
     }
 
     /* Do we need to override this method to draw borders? */
-    public void
-    paint(Graphics g)
+    @Override
+    public void paint(Graphics g)
     {
 	super.paint(g);
 	if (borderColour != null) {
@@ -146,8 +145,8 @@ FigureDef
     }
 
   /*** ActionListener-interface: ***/
-    public void
-    actionPerformed(ActionEvent e) 
+    @Override
+    public void actionPerformed(ActionEvent e) 
     {
 	Component c = (Component) e.getSource();
 	

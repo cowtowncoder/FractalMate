@@ -27,14 +27,13 @@ Changes:
 
 ***************************************/
 
-package ts.gui;
+package com.cowtowncoder.gui;
 
 import java.awt.*;
-import java.util.*;
 
 import java.net.URLEncoder;
 
-import ts.io.LoadedDef;
+import com.cowtowncoder.io.LoadedDef;
 
 class TSPropertyListElement
 {

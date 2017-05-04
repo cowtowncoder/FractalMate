@@ -20,13 +20,11 @@ Changes:
 
 ***************************************/
 
-package ts.util;
+package com.cowtowncoder.util;
 
-public final class
-TSArray
+public final class TSArray
 {
-    public static int
-    findClosestIndex(double [] arr, double v)
+    public static int findClosestIndex(double [] arr, double v)
     {
       int i, sel;
       double dist = 100000000.0;

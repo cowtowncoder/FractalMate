@@ -23,7 +23,7 @@ Changes:
 
 ***************************************/
 
-package ts.fractlet;
+package com.cowtowncoder.fractlet;
 
 import java.awt.*;
 import java.awt.event.*;

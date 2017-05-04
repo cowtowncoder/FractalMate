@@ -48,7 +48,7 @@ Changes:
 
 ***************************************/
 
-package ts.io;
+package com.cowtowncoder.io;
 
 import java.util.*;
 

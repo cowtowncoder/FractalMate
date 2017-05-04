@@ -28,20 +28,17 @@ Changes:
 
 ***************************************/
 
-package ts.fractlet;
-
-import ts.ext.PlatformSpecific;
-
-import ts.util.TSArray;
-
-import ts.gui.NamedPanel;
-import ts.gui.NumberField;
+package com.cowtowncoder.fractlet;
 
 import java.awt.*;
 import java.awt.event.*;
 
-public final class
-PreviewProps
+import com.cowtowncoder.ext.PlatformSpecific;
+import com.cowtowncoder.gui.NamedPanel;
+import com.cowtowncoder.gui.NumberField;
+import com.cowtowncoder.util.TSArray;
+
+public final class PreviewProps
     extends Dialog
     implements ActionListener, AdjustmentListener, ItemListener
 {

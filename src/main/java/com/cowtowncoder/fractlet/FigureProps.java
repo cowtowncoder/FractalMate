@@ -30,18 +30,17 @@ Changes:
 
 ***************************************/
 
-package ts.fractlet;
+package com.cowtowncoder.fractlet;
 
-import ts.ext.PlatformSpecific;
+import com.cowtowncoder.ext.PlatformSpecific;
 
 import java.awt.*;
 import java.awt.event.*;
 
-import ts.gui.TSProperty;
-import ts.gui.ClosableDialog;
+import com.cowtowncoder.gui.TSProperty;
+import com.cowtowncoder.gui.ClosableDialog;
 
-public final class
-FigureProps
+public final class FigureProps
     extends ClosableDialog
     implements ActionListener
 {

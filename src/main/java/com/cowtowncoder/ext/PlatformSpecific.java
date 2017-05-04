@@ -23,7 +23,7 @@ Changes:
 
 **************************************/
 
-package ts.ext;
+package com.cowtowncoder.ext;
 
 import java.awt.Color;
 import java.awt.SystemColor;

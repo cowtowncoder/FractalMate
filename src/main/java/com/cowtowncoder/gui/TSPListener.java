@@ -22,7 +22,7 @@ Changes:
 
 *******************************************/
 
-package ts.gui;
+package com.cowtowncoder.gui;
 
 public interface TSPListener
 {

@@ -23,7 +23,7 @@ Changes:
 
 ***************************************/
 
-package ts.gui;
+package com.cowtowncoder.gui;
 
 import java.awt.*;
 

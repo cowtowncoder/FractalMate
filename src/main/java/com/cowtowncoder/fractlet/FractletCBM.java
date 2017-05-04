@@ -26,16 +26,16 @@ Changes:
 
 ***************************************/
 
-package ts.fractlet;
+package com.cowtowncoder.fractlet;
 
 import java.awt.*;
 import java.awt.event.*;
 
-import ts.gui.TSProperty;
-import ts.gui.TSProperties;
+import com.cowtowncoder.gui.TSProperty;
+import com.cowtowncoder.gui.TSProperties;
 
 public class FractletCBM
-extends CheckboxMenuItem
+    extends CheckboxMenuItem
     implements ItemListener
 {
     FractletListener parent;
@@ -43,8 +43,7 @@ extends CheckboxMenuItem
     TSProperties properties;
     String propertyId;
 
-    public
-    FractletCBM(String title, String i, boolean state, FractletListener p,
+    public FractletCBM(String title, String i, boolean state, FractletListener p,
 		TSProperties tsp, String pid)
     {
 	super(title, (pid == null) ? state : tsp.getBooleanValue(pid));

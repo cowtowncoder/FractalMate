@@ -24,15 +24,14 @@ Changes:
 
 ***************************************/
 				       
-package ts.gui;
+package com.cowtowncoder.gui;
 
-import ts.ext.PlatformSpecific;
+import com.cowtowncoder.ext.PlatformSpecific;
 
 import java.awt.*;
 import java.awt.event.*;
 
-public final class
-MessageBox
+public final class MessageBox
 extends Dialog
 {
     public final static int OK = 1;

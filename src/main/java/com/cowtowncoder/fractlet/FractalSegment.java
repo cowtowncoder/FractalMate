@@ -34,7 +34,7 @@ Changes:
  *
  *************************************************************************/
 
-package ts.fractlet;
+package com.cowtowncoder.fractlet;
 
 final class
 FractalSegment

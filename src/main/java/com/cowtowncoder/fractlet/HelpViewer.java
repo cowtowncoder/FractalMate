@@ -22,9 +22,9 @@ Changes:
 
 ***************************************/
 
-package ts.fractlet;
+package com.cowtowncoder.fractlet;
 
-import ts.ext.PlatformSpecific;
+import com.cowtowncoder.ext.PlatformSpecific;
 
 import java.applet.Applet;
 import java.awt.*;
@@ -33,8 +33,7 @@ import java.util.*;
 
 import java.io.*;
 
-public final class
-HelpViewer
+public final class HelpViewer
     extends Dialog
     implements ActionListener, WindowListener
 

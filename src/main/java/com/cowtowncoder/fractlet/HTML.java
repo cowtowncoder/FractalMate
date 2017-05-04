@@ -36,7 +36,7 @@ Changes:
 
 ***************************************/
 
-package ts.fractlet;
+package com.cowtowncoder.fractlet;
 
 import java.applet.Applet;
 import java.awt.event.*;
@@ -80,7 +80,7 @@ public class HTML
 
     // Just some of the more common special chars....
     public final static String specChars =
-	"/lt=</gt=>/amp=&/quot=\"/copy=(c)/auml=ä/ouml=ö/Auml=Ä/Ouml=Ö/";
+	"/lt=</gt=>/amp=&/quot=\"/copy=(c)/auml=ï¿½/ouml=ï¿½/Auml=ï¿½/Ouml=ï¿½/";
 
     // Tags other than these will simply be discarded:
     // (except for various text effect tags, that are

@@ -27,7 +27,7 @@ Changes:
 
 ***************************************/
 
-package ts.ext;
+package com.cowtowncoder.ext;
 
 import java.awt.*;
 import java.awt.image.*;

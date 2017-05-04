@@ -25,15 +25,13 @@ Changes:
 
 ***************************************/
 
-package ts.gui;
+package com.cowtowncoder.gui;
 
-import ts.ext.PlatformSpecific;
+import com.cowtowncoder.ext.PlatformSpecific;
 
 import java.awt.*;
 
-public class
-SystemPanel
-    //extends Container
+public class SystemPanel
     extends Panel
 {
     public

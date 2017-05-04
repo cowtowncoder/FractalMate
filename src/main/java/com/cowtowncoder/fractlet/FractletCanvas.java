@@ -44,7 +44,7 @@ Changes:
 
 ***********************************************/
 
-package ts.fractlet;
+package com.cowtowncoder.fractlet;
 
 import java.awt.*;
 import java.applet.*;
@@ -53,10 +53,10 @@ import java.io.*;
 import java.net.*;
 import java.util.*;
 
-import ts.gui.TSProperty;
-import ts.gui.TSProperties;
-import ts.io.Loader;
-import ts.io.LoadedDef;
+import com.cowtowncoder.gui.TSProperty;
+import com.cowtowncoder.gui.TSProperties;
+import com.cowtowncoder.io.Loader;
+import com.cowtowncoder.io.LoadedDef;
 
 public final class
 FractletCanvas

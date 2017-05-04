@@ -22,13 +22,12 @@ Changes:
 
 ***************************************/
 
-package ts.fractlet;
+package com.cowtowncoder.fractlet;
 
 import java.awt.*;
 import java.awt.event.*;
 
-public interface
-FractletListener
+public interface FractletListener
 {
     public void doMenuAction(String id, AWTEvent e);
     public void setMenuState(String id, boolean state);

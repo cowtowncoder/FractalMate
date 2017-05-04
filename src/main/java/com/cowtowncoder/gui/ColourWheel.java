@@ -23,16 +23,13 @@ Changes:
 
 ***************************************/
 
-package ts.gui;
+package com.cowtowncoder.gui;
 
 import java.awt.*;
 import java.awt.event.*;
 
-import java.util.*;
-
-final class
-ColourWheel
-extends Canvas
+final class ColourWheel
+    extends Canvas
     implements Runnable, MouseListener, MouseMotionListener
 {
     Color background, border;

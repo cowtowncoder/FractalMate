@@ -35,12 +35,11 @@ Changes:
 
 ***************************************/
 
-package ts.gui;
+package com.cowtowncoder.gui;
 
 import java.util.*;
 
-public class
-TSProperties
+public class TSProperties
 {
     protected Hashtable TSProps;
 
@@ -52,16 +51,14 @@ TSProperties
 
  /*** Basic functions for creating and accessing the properties: ***/
 
-    public void
-    addProperty(String name, Object def_val, int props)
+    public void addProperty(String name, Object def_val, int props)
     {
 	TSProperty p = new TSProperty(name, def_val, props);
 
 	TSProps.put(name, p);
     }
 
-    public boolean
-    setValue(String name, Object value, Object changer)
+    public boolean setValue(String name, Object value, Object changer)
     {
 	TSProperty t = (TSProperty) TSProps.get(name);
 

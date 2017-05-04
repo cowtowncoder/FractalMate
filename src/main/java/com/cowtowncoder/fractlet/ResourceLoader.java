@@ -49,11 +49,10 @@ Changes:
 
 ***************************************/
 
-package ts.fractlet;
+package com.cowtowncoder.fractlet;
 
-import ts.ext.PlatformSpecific;
-
-import ts.io.LoadedDef;
+import com.cowtowncoder.ext.PlatformSpecific;
+import com.cowtowncoder.io.LoadedDef;
 
 import java.io.*;
 import java.net.*;

@@ -54,15 +54,7 @@ Changes:
 
 *************************************************/
 
-package ts.fractlet;
-
-import ts.gui.*;
-
-import ts.ext.PNGSaver;
-import ts.ext.PlatformSpecific;
-
-import ts.util.TSArray;
-import ts.io.LoadedDef;
+package com.cowtowncoder.fractlet;
 
 import java.awt.*;
 import java.applet.*;
@@ -71,10 +63,14 @@ import java.io.*;
 import java.net.*;
 import java.util.*;
 
-public final class
-Fractlet
-  extends
-    Applet
+import com.cowtowncoder.ext.PNGSaver;
+import com.cowtowncoder.ext.PlatformSpecific;
+import com.cowtowncoder.gui.*;
+import com.cowtowncoder.io.LoadedDef;
+import com.cowtowncoder.util.TSArray;
+
+public final class Fractlet
+  extends Applet
   implements
     FocusListener,
     FractletListener,
@@ -1857,7 +1853,7 @@ FRACTLET_VERSION+", Last changed 12-Nov-1999, TSa",
   }
 
   /** FocusListener implementation: **/
-  // A kludge, sole purpose to make the damn canvas get the #¤¤&%¤%/
+  // A kludge, sole purpose to make the damn canvas get the #ï¿½ï¿½&%ï¿½%/
   // focus right away, so it can catch the key presses.
   protected boolean focus_init_done = false;
 

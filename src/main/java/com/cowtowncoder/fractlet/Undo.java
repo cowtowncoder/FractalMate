@@ -26,7 +26,7 @@ Changes:
 
 ***************************************/
 
-package ts.fractlet;
+package com.cowtowncoder.fractlet;
 
 public final class
 Undo

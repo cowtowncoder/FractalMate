@@ -29,19 +29,16 @@ Changes:
 
 ***************************************/
 
-package ts.gui;
+package com.cowtowncoder.gui;
 
-import ts.ext.PlatformSpecific;
+import com.cowtowncoder.ext.PlatformSpecific;
 
 import java.awt.*;
 import java.awt.event.*;
 
 import java.util.*;
 
-
-public final class
-ColourBox
-extends Dialog
+public final class ColourBox extends Dialog
     implements ActionListener, AdjustmentListener,
      MouseListener, MouseMotionListener, FocusListener,
 	       WindowListener

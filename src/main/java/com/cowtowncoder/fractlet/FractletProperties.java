@@ -23,20 +23,19 @@ Changes:
 
 *************************************************/
 
-package ts.fractlet;
-
-import ts.gui.TSProperties;
-import ts.gui.TSProperty;
-
-import ts.io.LoadedDef;
+package com.cowtowncoder.fractlet;
 
 import java.io.*;
 import java.util.*;
 import java.awt.*;
 
-public class
-FractletProperties
-extends TSProperties
+import com.cowtowncoder.gui.TSProperties;
+import com.cowtowncoder.gui.TSProperty;
+
+import com.cowtowncoder.io.LoadedDef;
+
+public class FractletProperties
+    extends TSProperties
 {
     // Names for saveable variables:
 
