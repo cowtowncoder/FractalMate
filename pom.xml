@@ -90,7 +90,7 @@
           <configuration>
             <archive>
               <manifest>
-                <mainClass>com.cowtowncoder.fr8r.FractalMate</mainClass>
+                <mainClass>com.cowtowncoder.fractalmate.FractalMate</mainClass>
               </manifest>
             </archive>
           </configuration>
