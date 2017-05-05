@@ -1,0 +1,27 @@
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Dragon";
+	AUTHOR = "TSa";
+	COMMENT = "One+of+the+%27basic%27+fractals.+The+colours+can+be+generated%0Aeither+by+using+the+angles+or+without%3B+I+decided+not+to%0Ause+the+angle%2C+as+the+result+seems+to+be+bit+more%0Ainteresting.+Fortunately+calculating+this+fractal+is%0Arelatively+fast%2C+so+you+can+also+try+preview-mode%0Ato+see+how+moving+the+points+around+changes+the%0Aresult.";
+	WINDOW = (624, 508);
+	RECURSE = 32;
+	REC_UNTIL = 1.0;
+	COLOUR_SHIFT = 10;
+	COLOURS_BASED_ON_ANGLE = false;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(255,0,0), (255,255,0)
+	);
+
+	MAIN_PATTERN = (
+		(106.0, 317.2126, 0.0, ""),
+		(231.0, 317.2126, 0.0, ""),
+		(471.99997, 245.80316, 0.0, ""),
+		(470.0, 317.2126, 0.0, ""),
+		(421.0, 317.2126, 0.0, "")
+	);
+);
+
+</FRACTLET>

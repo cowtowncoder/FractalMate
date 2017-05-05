@@ -1,0 +1,28 @@
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Triangle";
+	AUTHOR = "TSa";
+	COMMENT = "A+somewhat+dull+triangle+fractal.+Still%2C%0Atriangle-fanatics+might+like+it%21+%3A-%29%0A";
+	WINDOW = (624, 508);
+	RECURSE = 10;
+	REC_UNTIL = 0.5;
+	COLOUR_SHIFT = 0;
+	COLOURS_BASED_ON_ANGLE = true;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(255,255,255), (64,64,64), (255,255,255), (64,64,64)
+	);
+
+	MAIN_PATTERN = (
+		(308.14972, 92.6617, 0.0, ""),
+		(308.14972, 253.49687, 0.0, "M"),
+		(448.2818, 331.63507, 0.0, "I"),
+		(308.14972, 253.498, 0.0, "M"),
+		(167.71823, 330.20697, 0.0, "I"),
+		(307.14972, 415.33832, 0.0, "")
+	);
+);
+
+</FRACTLET>

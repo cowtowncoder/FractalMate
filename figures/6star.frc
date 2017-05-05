@@ -1,0 +1,25 @@
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "untitled";
+	AUTHOR = "unknown";
+	COMMENT = "-";
+	WINDOW = (508, 508);
+	RECURSE = 99;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(255,0,0), (255,255,0)
+	);
+
+	MAIN_PATTERN = (
+		(114.317566, 276.2188, 0.0, ""),
+		(134.0372, 276.2188, 0.0, ""),
+		(134.0372, 242.78119, 0.0, ""),
+		(383.53333, 242.78119, 0.0, ""),
+		(382.67596, 276.2188, 0.0, ""),
+		(406.68243, 276.2188, 0.0, "")
+	);
+);
+
+</FRACTLET>

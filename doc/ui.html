@@ -1,0 +1,340 @@
+<HTML>
+<HEAD>
+<TITLE>
+Fractlet user interface
+</TITLE>
+<!-- Changed by: Doomdark,  17-Aug-1999 -->
+<LINK REV="made" HREF="mailto:doomdark@cc.hut.fi">
+</HEAD>
+<BODY BGCOLOR=#F0D080>
+
+<H1 ALIGN=CENTER>
+Fractlet user interface
+</H1>
+
+The fractlet user interface consists of the main fractlet window
+(which opens when Fractlet is started) and various other helper
+windows, which are opened when needed (colour selection window,
+help browsing window, file load/save windows etc).
+<BR><BR>
+The main interface window contains menus, when Fractlet is run as
+an application. In addition, various popup menus may be invoked
+as explained later on.
+
+<H2 ALIGN=CENTER>
+Main fractlet window controls
+</H2>
+
+The main fractlet window consists of three separate panels:
+
+<UL>
+<LI><B>Control panel</B> is at the top of the fractlet window.
+  It contains various sub-panels as well as some action
+  buttons:
+  <UL>
+  <LI><STRONG>Pattern-panel</STRONG> controls which patterns are enabled
+    (see <A HREF="patterns.html">patterns</A> section),
+    and also which pattern is shown on the View-panel.
+    The main pattern is always enabled; 'Fractal figure'
+    is not a pattern, but rather a view to the resulting
+    fractal figure, drawn based on the patterns. Certain
+    commands (such as 'Draw') may cause the view to be
+    changed. Also, if the pattern that is currently viewed
+    is disabled, the pattern viewed will be changed to the
+    main pattern.
+  <LI><STRONG>Figure-panel</STRONG> shows information about the current
+    fractal figure; its name is shown in the text field, and other
+    properties can be viewed by pressing 'Props'-button. 'Defs'-button
+    will show the definition as written to the save-file (this is
+    useful for applets, as they can not usually save files due to
+  <LI><STRONG>Colour-panel</STRONG> contains controls that affect the
+    way colours are generated for the fractal figure. Palette used may
+    be changed, either to one of the predefined default palettes, or
+    to 'Custom'. When 'Custom' palette is selected, a colour selection
+    window will be opened (or activated, if it was already open), and
+    the palette can be manually editted.<BR>
+    The colours actually used are selected from the palette specified,
+    according to two different methods, that can be enabled/disabled
+    independently. The first method uses the line angles to select
+    the colour, and the second uses the level at which the line segment
+    reached the end-of-replacement limit. The exact procedure is explained in
+    section <A HREF="colours.html">'Defining colours'</A>).<BR>
+    'Colours from line angles' enables/disables the use of the first method,
+    and 'Col.shift' is used for controlling the second method (the value is
+    in degrees, and 0 disables the method).
+  <LI> <STRONG>Drawing-panel</STRONG> contains controls that define the
+    recursion limits, which restrict the recursion used for generating
+    the fractal figure.<BR>
+    'Steps' restricts the maximum number of recursive replacements
+    applied to line segments. Usually the lengths of the line segments
+    converge relatively fast towards 0, and thus the default value of
+    99 usually does not restrict the drawing process a lot.<BR>
+    'Rec. to XXX pt lines' defines the minimum length of lines that are
+    still replaced. Thus, by default, lines of which length goes below
+    1 point, are not recursively replaced.<BR>
+    These two restrictions are both used to control the drawing process.
+    When drawing the fractal figure, Fractlet also keeps track of the
+    deepest recursion level, and this level is displayed in the text field
+    on the right side of 'Steps' control.
+  <LI> <STRONG>Preview mode</STRONG> controls are displayed below
+    Pattern-panel. Preview mode is disabled by default; when enabled,
+    a preview of the resulting fractal figure is drawn below the currently
+    viewed pattern. However, because the drawing the full fractal figure
+    may be too time-consuming for interactive editing, extra limits are
+    defined for the preview mode fractal drawing. These limits can be
+    edited by pressing the button on right of 'Preview mode' checkbox.
+    This opens up 'Preview mode settings' - window:
+    <UL>
+    <LI>'Stop at X levels' defines (usually a smaller) limit, which is
+       equivalent to the recursion level control in 'Drawing panel'
+       explained earlier on. The default is much smaller here, though,
+       typically 5 levels.
+    <LI>'Stop at X pt lines' is identical to 'Rec. to' control on
+       'Drawing panel', but once again, is defined to limit the drawing
+       more by default (2 pt lines is a typical default)
+    <LI>'Use at most X sec / level' restricts the maximum time used
+       for drawing the preview of the fractal figure; by default the
+       maximum is set to be 1 second.
+    </UL>
+    Note that the changes to preview mode properties affect the preview
+    mode drawing immediately, even without pressing 'Ok'-button.
+
+  <LI> <STRONG>Draw-button</STRONG> begins drawing the resulting fractal
+    figure, and changes the view to 'Fractal figure'. The drawing can
+    be stopped by pressing 'Stop'-button.
+  <LI> <STRONG>Stop-button</STRONG> interrupts the drawing process. It
+    may also be used for interrupting the preview mode drawing, if
+    necessary.
+  <LI> <STRONG>Help-button</STRONG> opens up (or activates, if already
+    opened) the help-browsing window, that shows these documentation
+    pages...
+  </UL>
+
+<LI><B>View-panel</B> is below the control panel, and displays one of
+  the patterns, or the (possibly only partially drawn) resulting fractal
+  figure. The line segments, and the end points may be selected by
+  pressing the mouse button. If shift-key is pressed when selecting,
+  the old selection(s) is not removed, but the new line segment / end point
+  is added to the selection. The end points / segments may be moved by
+  dragging them with the mouse. If the preview mode is enabled, this will
+  usually change the preview figure.<BR>
+  Line end points can also be selected by 'rubber-banding'; the left mouse
+  button is pressed on a location that does not select any single line
+  segment or end point, and after that, the mouse is dragged. When the
+  mouse button is released, all the line segment end points inside the
+  rectangle are selected.
+  <BR>
+  Popup menus may also be activated on the view-panel, by
+  using the standard popup-menu
+  activation methods, which are platform-dependant (on Windows, by
+  clicking the right mouse-button, on X-windows by holding down the
+  third mouse button and so on). The popup-menu displayed depends on
+  whether the view panel is showing a pattern or the fractal figure,
+  and whether a line segment or line segment end point lies on the
+  point the popup menu was activated over. The popup menus are explained
+  later on in this document, after normal menus.
+  <BR>
+  There are also keyboard-controls that can be used for manipulating
+  the patterns, as explained in
+ <A HREF="keyboard.html">'Keyboard operations'</A> section.
+
+<LI><B>Status-line</B> is below the view-window, and shows some information
+  about the mouse cursor or the line segments and segment end points when
+  they are selected or dragged.
+</UL>
+
+<H2 ALIGN=CENTER>
+Main fractlet window menus
+</H2>
+
+In addition to the controls displayed on the main window, there are
+various menus, when Fractlet is run as an application:
+
+<UL>
+<LI><B>File-menu</B> contains the operations that affect the fractal
+  as a whole:
+  <UL>
+  <LI><STRONG>New figure</STRONG> gets rid of the currently defined
+    patterns, palettes and other pattern/figure settings, and reverts
+    back to the initial state.
+  <LI><STRONG>Load figure</STRONG>
+    Loads the figure definition from a definition file using the default file
+    request window.
+  <LI><STRONG>Save figure</STRONG>
+    Saves the figure definition ti a definition file using the default file
+    request window.
+  <LI><STRONG>Export as PNG</STRONG>
+    Exports the image of the resulting fractal figure to a file in PNG
+    (Portable Network Graphics) format. Note that Fractlet does not
+    produce GIF-files, due to the licensing problems; PNG is the replacement
+    for GIFs.
+  <LI><STRONG>Export as JPEG</STRONG>
+    Like above, but saves the figure in JPEG-format. The 'quality'-factor
+    defines how much the image is compressed; lower the quality, smaller
+    the resulting file.
+  <LI><STRONG>Exit</STRONG> exits Fractlet. No questions asked, quick
+    and permanent... :-)
+  </UL>
+<LI><B>Edit-menu</B> contains the operations that affect individual
+   patterns (or parts of patterns); usually the selected pattern
+   (ie, the pattern that is shown in View panel):
+  <UL>
+  <LI><STRONG>Undo</STRONG>
+    Undo can be used to undo ('take back') the previous operation,
+    that affected a pattern of the current figure. This may be the
+    current pattern, or some other pattern. If it was done to a different
+    pattern, the pattern affected is shown in view panel, after undoing
+    the operation. The number of undoable operations is only limited by
+    the memory available; the exception is that 'Load' and 'New' operations
+    cause the undo-buffer to be cleared.
+  <LI><STRONG>Redo</STRONG>
+    Undo-operations themselves may be 'undoed'; ie. the original operation
+    is executed again. For each (successive) undo-operation, a Redo-operation
+    is available. However, if a normal,  undoable operation, is done after
+    undo'ing some operation(s), the corresponding redo-operation(s)s is lost.
+  <LI><STRONG>Select all</STRONG>
+    Simply selects all the line segments (and end points) of the current
+    pattern.
+  <LI><STRONG>Copy pattern</STRONG>
+    Allows copy (or exchange) operations between the main, first level and
+    secondary pattern(s). '-&gt;' means that the pattern on the right
+    is replaced with a copy of the pattern on the left; '&lt;-&gt;'
+    means that the patterns are exchanged.
+  <LI><STRONG>Delete point(s)</STRONG>
+    This will delete the selected point or points.
+  <LI><STRONG>Split selected line(s)</STRONG>
+    Splits the selected line segments in half.
+  <LI><STRONG>Center pattern</STRONG>
+    Centers the current pattern on the view panel.
+  <LI><STRONG>Fit pattern</STRONG>
+    Fits the current pattern on the view panel; either by expanding or
+    shrinking the pattern so that the end points are on the edges of the
+    view panel ('to window') or so that the figure aspect ratio is
+    preserved, while still making sure that no edge point is outside
+    the window. The former usually distorts the resulting fractal figure,
+    while the latter simply changes the size of the figure.
+  <LI><STRONG>Align pattern</STRONG>
+    The current pattern may be aligned on one of the four edges; it moves
+    the line segment end points so that the left/right/top/bottommost
+    end point is on the respective edge of the view panel.
+  <LI><STRONG>Align selected points</STRONG>
+    As above, but only aligns the selected points, according to
+    left/right/bottom/topmost point. In addition, there are
+    2 other alignment directions, 'Vert. center' and 'Horiz. center', which
+    align the selected points in the vertical or horizontal middle point
+    of the selected points.
+  </UL>
+
+<LI><B>Options-menu</B> contains options that are not related to the
+  actual fractal figures or individual patterns; usually they affect the
+  way Fractlet itself functions:
+
+  <UL>
+  <LI><STRONG>Use double-buffering</STRONG>
+     When this option is on, Fractlet uses double-buffering to
+     reduce flickering. The downside is that this uses more memory
+     (and in theory is slightly slower).
+  <LI><STRONG>Auto-resize</STRONG>
+     When this option is on, the patterns are automatically resized,
+     when the Fractlet main window is resized. The resize may distort
+     the pattern aspect ratio.
+  <LI><STRONG>Center on-load</STRONG>
+     When this option is on, the patterns are centered on the view
+     panel, if the current view panel size differs from the size of
+     the view window the fractal definition was originally saved from.
+     This is often the case when fractals are saved from Fractlet application
+     but viewed from the Fractlet applet.
+  <LI><STRONG>Show point numbers</STRONG>
+     When this option is set, the order number of the line segment end
+     points are drawn on the view panel.
+  <LI><STRONG>Show line directions</STRONG>
+     When this option is set, the line segment properties are visualized
+     on the view panel, by drawing a symbol (usually an arrow) in the
+     middle of the line segment.
+  <LI><STRONG>Prevent multiple draws</STRONG>
+     When this option is set, the drawing routine keeps track of which
+     pixels are already drawn on the resulting figure, and does not
+     redraw the pixels later on. This usually speeds up the drawing
+     process. This only works for line segments of which length is
+     at max. 1 point.
+  <LI><STRONG>Draw intermediate levels</STRONG>
+     When this option is set, all the intermediate levels are also
+     drawn. By default this is not done, and only the lines at the
+     bottommost level (where the recursion ends) are drawn.
+  </UL>
+</UL>
+
+<H2 ALIGN=CENTER>
+Fractlet popup menus
+</H2>
+
+Popup menus are invoked by the normal platform-dependant procedure
+(on Windows, by clicking second mouse button, on X-windows by pressing
+third mouse button); this has to be done over the view panel. The
+menu displayed depends on which pattern (or the fractal figure) is
+viewed, and if a pattern is being viewed, is the mouse cursor over
+a line segment or line end-point. Thus, there are 4 different popup
+menus:
+
+<UL>
+<LI>Fractal figure popup menu is invoked when 'Fractal figure' is shown
+  on the view panel.
+  It contains following menu items:
+  <UL>
+  <LI><STRONG>-> main pattern</STRONG> makes the view panel show the
+     main pattern (identical to pressing the 'Main pattern' on 'Pattern'
+     section in Control panel)
+  <LI><STRONG>-> 1st level pattern</STRONG> is similar, but instead
+     selects the first level pattern.
+  <LI><STRONG>-> secondary pattern</STRONG> is similar, but instead
+     selects the secondary pattern.
+  <LI>
+  </UL>
+
+<LI>Pattern popup menu is invoked when one of the patterns is shown on
+ the view panel, and the cursor is not over any line segment or segment
+ end point.
+It contains following menu items:
+  <UL>
+  <LI><STRONG>-> main pattern</STRONG>
+  </UL>
+
+<LI>Line popup menu is invoked when the cursor is over a line segment of
+  the viewed pattern. It is used for changing the segment properties,
+  such as visibility, and for creating new line segments.
+ It contains following menu items:
+  <UL>
+  <LI><STRONG>Invisible</STRONG>. Toggles the 'visibility'-flag of the line segment.
+    The line segment properties are explained in
+   <A HREF="segments.html">segment-section</A>.
+  <LI><STRONG>Upside down</STRONG>. Toggles the 'upside down'-flag on and off;
+    explained in <A HREF="segments.html">segment-section</A>.
+  <LI><STRONG>Mirrored</STRONG>. Toggles the 'mirrored'-flag,
+    explained in <A HREF="segments.html">segment-section</A>.
+  <LI><STRONG>Double-sided</STRONG>. Toggles the 'double-sided' flag,
+    explained in <A HREF="segments.html">segment-section</A>.
+  <LI><STRONG>Final</STRONG>. Toggles the 'final'-flag,
+    explained in <A HREF="segments.html">segment-section</A>.
+  <LI><STRONG>Split segment</STRONG> splits the line segment in two, replacing the
+    segment with two new segment.
+    The first new segment stretches from the original begin point to the middle
+    point, and the other from the middle point to the original end point.
+  </UL>
+
+<LI>Point popup menu is invoked when the cursor is over an end point of
+  a line segment of the viewed pattern.
+  It contains following menu items:
+  <UL>
+  <LI><STRONG>Delete point</STRONG> deletes the selected segment end point,
+   resulting in the two line segments affected being combined.
+  </UL>
+
+</UL>
+
+<HR>
+
+<ADDRESS>Created by doomdark@cc.hut.fi
+<BR>Updated 17-Aug-1999</ADDRESS>
+
+</BODY>
+</HTML>

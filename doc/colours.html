@@ -1,0 +1,55 @@
+<HTML>
+<HEAD>
+<TITLE>
+Colour generation
+</TITLE>
+<!-- Changed by: Doomdark,  17-Aug-1999 -->
+<LINK REV="made" HREF="mailto:doomdark@cc.hut.fi">
+</HEAD>
+<BODY BGCOLOR=#F0D080>
+
+<H1 ALIGN=CENTER>
+Colour generation
+</H1>
+The colours of the fractal figure are calculated from the colour palette
+that can be selected using the 'colour'-panel in Fractlet control panel.
+There are some predefined palettes, and you can also create a custom palette.
+The palette is used to create a 'colour wheel', the colours from the palette
+are located symmetrically, to the specified angles, and the in-between angles
+are interpolated from these colours. Note that 256 colour mode may restrict
+the actual number of colours Fractlet is able to use.
+<BR><BR>
+The operation of the colour selection window (which is opened when the
+custom palette is chosen) should be straight-forward; the colours of the
+palette are shown in boxes at the bottom of the window, the background colour
+leftmost and then the actual fractal colours. There are on/off switches above
+each foreground colour box, and they determine which colours are actually included
+in the palette. The selected colour may be modified by moving the cursor in
+the colour circle; this changes the 'hue' and 'saturation' of the colour
+(in HSB/HSV - sense). The 'value' (or 'brightness') of the colour can be changed
+from the sliders on the right of the colour circle. Alternatively you can also
+modify the RGB-sliders, if you prefer modifying the colours via Red/Green/Blue
+components.
+<BR><BR>
+The actual angles used for selecting colours are then calculated using 2
+method: 'angle-based' and 'level-based' algorithms. Angle-based algorithm
+uses the angle of the line segment directly for selecting the colour from the
+colour wheel. The level-based algorithm takes the level in which the line segment
+is drawn, and multiplies it by the 'colour shift'-factor (displayed and modified
+in 'colour'-panel of the control panel); this defines the actual angle used for
+selecting the colour. Both methods can be combined; the angle-based algorithm
+can be turned on and off, and the level-based can be effectively disabled by
+defining step of 0 degrees.
+<BR><BR>
+The method to use depends on the properties of the fractal figure. Generally,
+for those fractals that converge fast, ie. where the longest segment is significantly
+shorter than the end-to-end length of the pattern,
+the angle-based is probably better. Similarly,  the patterns that have line segments
+that have about equal line-lengths, the angle-based method may be better.
+<HR>
+
+<ADDRESS>Created by doomdark@cc.hut.fi
+<BR>Updated 17-Aug-1999</ADDRESS>
+
+</BODY>
+</HTML>

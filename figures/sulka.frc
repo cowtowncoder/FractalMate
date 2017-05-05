@@ -1,0 +1,29 @@
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 99;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "unknown";
+	COLOUR_SHIFT = 10;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "unnamed";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(0,4,38), (255,179,225)
+	);
+
+	MAIN_PATTERN = (
+		(318.94305, 259.69388, 0.0, "IM"),
+		(197.99326, 385.3576, 0.0, "U"),
+		(417.07507, 341.48752, 0.0, "U"),
+		(417.75006, 296.27496, 0.0, ""),
+		(646.67114, 257.05475, 0.0, "")
+	);
+);
+
+</FRACTLET>

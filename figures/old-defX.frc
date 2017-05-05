@@ -1,0 +1,430 @@
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Dragon";
+	AUTHOR = "TSa";
+	COMMENT = "One+of+the+%27basic%27+fractals.+The+colours+can+be+generated%0Aeither+by+using+the+angles+or+without%3B+I+decided+not+to%0Ause+the+angle%2C+as+the+result+seems+to+be+bit+more%0Ainteresting.+Fortunately+calculating+this+fractal+is%0Arelatively+fast%2C+so+you+can+also+try+preview-mode%0Ato+see+how+moving+the+points+around+changes+the%0Aresult.";
+	WINDOW = (624, 508);
+	RECURSE = 32;
+	REC_UNTIL = 1.0;
+	COLOUR_SHIFT = 10;
+	COLOURS_BASED_ON_ANGLE = false;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(255,0,0), (255,255,0)
+	);
+
+	MAIN_PATTERN = (
+		(106.0, 317.2126, 0.0, ""),
+		(231.0, 317.2126, 0.0, ""),
+		(471.99997, 245.80316, 0.0, ""),
+		(470.0, 317.2126, 0.0, ""),
+		(421.0, 317.2126, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Spruce";
+	AUTHOR = "TSa";
+	COMMENT = "By+combining+two+%27dragons%27+%28easiest%0Adone+by+using+just+1+double-sided%0Aline+at+the+1st+level%29+I+got+a+spruce%0Adone...";
+	WINDOW = (624, 508);
+	RECURSE = 99;
+	REC_UNTIL = 1.0;
+	COLOUR_SHIFT = 0;
+	COLOURS_BASED_ON_ANGLE = true;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(0,178,0), (0,255,0), (255,144,0), (0,255,0)
+	);
+
+	MAIN_PATTERN = (
+		(118.0, 244.21259, 0.0, ""),
+		(324.0, 244.21259, 0.0, ""),
+		(519.0, 189.80316, 0.0, "U"),
+		(495.0, 246.21259, 0.0, "I"),
+		(452.0, 251.21259, 0.0, "")
+	);
+	FIRST_LEVEL_PATTERN = (
+		(255.46373, 19.33757, 0.0, "D"),
+		(254.0202, 290.67816, 0.0, "U")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Curly";
+	AUTHOR = "TSa";
+	COMMENT = "A+simple+%27L%27+pattern+results+in+various%0Aquite+different+figures%3B+one+is+a+curly%0Athing+shown+here.+It+all+depends+on%0Adirections+%28ie+mirrored%2Fupside+down%29%0Aof+the+2+lines%2C+as+well+as+their+relative%0Alengths.+Compare+this+to+%27horn%27%0Aand+%27wedge%27+to+see+variations...";
+	WINDOW = (624, 508);
+	RECURSE = 55;
+	REC_UNTIL = 1.0;
+	COLOUR_SHIFT = 0;
+	COLOURS_BASED_ON_ANGLE = true;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(255,255,0), (0,255,0), (255,255,0), (255,0,0)
+	);
+
+	MAIN_PATTERN = (
+		(187.0, 349.0, 0.0, ""),
+		(321.0, 349.0, 0.0, ""),
+		(321.0, 150.0, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Leaf";
+	AUTHOR = "TSa";
+	COMMENT = "Another+variation+of+the+%27L%27-theme%3B%0Aresults+in+something...+Um%2C+perhaps%0Abit+like+a+leaf%3F%0A";
+	WINDOW = (624, 508);
+	RECURSE = 100;
+	REC_UNTIL = 1.0;
+	COLOUR_SHIFT = 0;
+	COLOURS_BASED_ON_ANGLE = true;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(252,255,101), (0,255,0), (0,178,0), (0,255,0)
+	);
+
+	MAIN_PATTERN = (
+		(79.0, 317.0, 0.0, ""),
+		(213.0, 317.0, 0.0, "MU"),
+		(213.0, 118.0, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Wedge";
+	AUTHOR = "TSa";
+	COMMENT = "And+once+again+we+use+the+basic%0A%27L%27-pattern%2C+this+time+resulting+in%0Aa+simple+wedge.+You+can+see+how+it%0Aiterates+towards+a+solid+figure+by%0Achanging+the+maximum+recursion%0Alevel...";
+	WINDOW = (624, 508);
+	RECURSE = 99;
+	REC_UNTIL = 1.0;
+	COLOUR_SHIFT = 0;
+	COLOURS_BASED_ON_ANGLE = true;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(255,242,46), (189,126,51)
+	);
+
+	MAIN_PATTERN = (
+		(134.0, 406.0, 0.0, "U"),
+		(447.0, 406.0, 0.0, "MU"),
+		(447.0, 285.0, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Horn";
+	AUTHOR = "TSa";
+	COMMENT = "Mercy%21+Is+there+no+end+to+variations%0Aof+L-theme%3F+Well%2C+once+more+for+the%0Aroad%3B+this+time+we+get+something%0Athat+looks+perhaps+bit+like+a+horn%2C%0Aespecially+if+the+colour+scheme+is%0Asuitably+chosen.%0A";
+	WINDOW = (624, 508);
+	RECURSE = 99;
+	REC_UNTIL = 1.0;
+	COLOUR_SHIFT = 0;
+	COLOURS_BASED_ON_ANGLE = true;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(248,255,239), (182,189,183)
+	);
+
+	MAIN_PATTERN = (
+		(134.0, 406.0, 0.0, "U"),
+		(447.0, 406.0, 0.0, "M"),
+		(447.0, 285.0, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Plant";
+	AUTHOR = "TSa";
+	COMMENT = "This+is+similar+to+a+plant+%28whatever%0Aits+name+was%29.+Probably+similar+to+a%0Afew+plants.+Still%2C+using+an+alternating%0Apattern+%28secondary+pattern%29+helps+a%0Alot+here%2C+it%27s+easy+to+%27tune%27+the+resulting%0Afigure.%0AAs+a+sidenote%3B+try+drawing+it+with+stricter%0Arecursion+limit%3B+set+%27rec+to%27+to+%272.0%27+%28or+3.0%2C%0A4.0%2C+whatever%29+pt+lines%3B+the+result+is%0Adifferent.+but+not+worse...";
+	WINDOW = (624, 508);
+	RECURSE = 33;
+	REC_UNTIL = 1.0;
+	COLOUR_SHIFT = 0;
+	COLOURS_BASED_ON_ANGLE = true;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(98,255,32), (68,135,27), (70,177,44)
+	);
+
+	MAIN_PATTERN = (
+		(258.0, 440.0, 0.0, ""),
+		(258.0, 401.0, 0.0, ""),
+		(132.0, 299.5, 0.0, "I"),
+		(258.5, 401.75, 0.0, ""),
+		(258.0, 74.0, 0.0, "")
+	);
+	SECONDARY_PATTERN = (
+		(246.0, 436.0, 0.0, ""),
+		(246.0, 353.0, 0.0, ""),
+		(404.0, 305.5, 0.0, "I"),
+		(246.5, 353.75, 0.0, ""),
+		(246.0, 70.0, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Leaf+%232";
+	AUTHOR = "TSa";
+	COMMENT = "Actually%2C+the+main+pattern+is+almost%0Aidentical+that+of+%27plant%27%2C+but+this+time%0Ano+separate+secondary+pattern+is+used.%0AThe+colour+scheme+has+been+changed%0Aa+bit+too%2C+now+the+colours+are+only+based%0Aon+the+actual+recursion+level.+Try+it%0Awith+other+settings+too.%0A";
+	WINDOW = (624, 508);
+	RECURSE = 55;
+	REC_UNTIL = 1.0;
+	COLOUR_SHIFT = 15;
+	COLOURS_BASED_ON_ANGLE = false;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(97,255,30), (0,255,0), (68,135,26), (69,177,43)
+	);
+
+	MAIN_PATTERN = (
+		(258.0, 440.0, 0.0, ""),
+		(258.0, 401.0, 0.0, ""),
+		(132.0, 299.5, 0.0, "I"),
+		(258.5, 401.75, 0.0, "U"),
+		(258.0, 74.0, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "A+flame";
+	AUTHOR = "unknown";
+	COMMENT = "-";
+	WINDOW = (508, 508);
+	RECURSE = 12;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(255,0,0), (255,255,0)
+	);
+
+	MAIN_PATTERN = (
+		(53.83589, 348.16235, 0.0, ""),
+		(304.4338, 348.16235, 0.0, ""),
+		(304.4338, 116.36632, 0.0, "I"),
+		(301.7536, 346.82217, 0.0, ""),
+		(449.16412, 507.63373, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Snowflake";
+	AUTHOR = "TSa";
+	COMMENT = "And+then+an+attempt+on+creating%0Asomething+like+a+snowflake.+Well%2C%0Anot+really+as+beautiful+as+the+real%0Aworld+snow-flakes%2C+but...%0AThe+first-level+figure+needs+to+be%0Aseparate%2C+to+produce+the+6+different%0Alines+to+begin+with%3B+after+that+there%0Aare+various+strategies+that+may+be%0Atried...%0A";
+	WINDOW = (624, 508);
+	RECURSE = 99;
+	REC_UNTIL = 1.0;
+	COLOUR_SHIFT = 0;
+	COLOURS_BASED_ON_ANGLE = true;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(255,255,255), (255,254,175), (254,253,255)
+	);
+
+	MAIN_PATTERN = (
+		(258.0, 442.0, 0.0, ""),
+		(258.0, 392.0, 0.0, ""),
+		(140.0, 306.5, 0.0, "I"),
+		(258.5, 390.75, 0.0, ""),
+		(258.0, 74.0, 0.0, "")
+	);
+	FIRST_LEVEL_PATTERN = (
+		(77.25456, 262.62012, 0.0, "M"),
+		(247.0, 262.62012, 0.0, ""),
+		(416.74542, 263.2582, 0.0, "I"),
+		(339.5304, 96.38443, 0.0, "M"),
+		(248.59537, 263.73688, 0.0, ""),
+		(162.92496, 97.900024, 0.0, "I"),
+		(165.7567, 424.0099, 0.0, "M"),
+		(247.7179, 265.13275, 0.0, ""),
+		(345.27368, 432.36554, 0.0, "")
+	);
+	SECONDARY_PATTERN = (
+		(246.0, 436.0, 0.0, ""),
+		(246.0, 373.0, 0.0, ""),
+		(398.0, 323.5, 0.0, "I"),
+		(246.5, 373.75, 0.0, ""),
+		(246.0, 70.0, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Plant+%232";
+	AUTHOR = "TSa";
+	COMMENT = "Well%2C+I+guess+the+result+looks+like%0Aa+plant%2C+a+spooky+one+indeed.+%3A-%29%0A";
+	WINDOW = (624, 508);
+	RECURSE = 22;
+	REC_UNTIL = 1.0;
+	COLOUR_SHIFT = 0;
+	COLOURS_BASED_ON_ANGLE = true;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(255,117,10), (69,177,43), (69,177,43), (13,255,40)
+	);
+
+	MAIN_PATTERN = (
+		(54.0, 454.0, 0.0, ""),
+		(276.0, 453.0, 0.0, ""),
+		(399.0, 345.0, 0.0, "I"),
+		(281.0, 452.0, 0.0, ""),
+		(355.0, 452.0, 0.0, "")
+	);
+	FIRST_LEVEL_PATTERN = (
+		(251.0, 402.0, 0.0, "D"),
+		(251.0, 79.0, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Tree";
+	AUTHOR = "TSa";
+	COMMENT = "One+fractal+that+looks+perhaps+better%0Aif+the+fractal+is+NOT+iterated+too%0Amuch.+The+result+looks+a+bit+like%0Aa+tree.";
+	WINDOW = (624, 508);
+	RECURSE = 8;
+	REC_UNTIL = 1.0;
+	COLOUR_SHIFT = 0;
+	COLOURS_BASED_ON_ANGLE = true;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(18,255,44), (255,119,15), (68,177,28), (255,104,47)
+	);
+
+	MAIN_PATTERN = (
+		(54.0, 454.0, 0.0, ""),
+		(276.0, 453.0, 0.0, "D"),
+		(382.0, 360.0, 0.0, "I"),
+		(278.0, 452.0, 0.0, ""),
+		(410.0, 452.0, 0.0, "I"),
+		(333.0, 452.0, 0.0, "")
+	);
+	FIRST_LEVEL_PATTERN = (
+		(251.0, 382.5267, 0.0, "D"),
+		(251.0, 132.47328, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Spiral";
+	AUTHOR = "TSa";
+	COMMENT = "A+wonderful+fractal%3B+from+a+simple+main%0Apattern+a+complex+figure+is+drawn.%0AColour+shifting%27s+effects+can+also+be%0Aseen+easily.%0AYou+can+try+to+move+the+lines+around%0Ato+check+how+the+figure+is+changed.%0AThis+fractal+is+also+a+very+%27deep%27+one%3B%0Arecurses+down+to+%7E300+levels+on%0Athe+default+set+up.%0AFinally%2C+note+that+the+spiral+characteristics%0Acan+be+achieved+by+a+simple+%27L%27-pattern%0Atoo+%28revenge+of+%27L%27-pattern%3F%29%2C+you+can+try%0Ait+by+removing+one+of+the+smaller+line%0Asegments.";
+	WINDOW = (624, 508);
+	RECURSE = 500;
+	REC_UNTIL = 1.0;
+	COLOUR_SHIFT = 1;
+	COLOURS_BASED_ON_ANGLE = true;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(254,247,9), (255,1,14)
+	);
+
+	MAIN_PATTERN = (
+		(82.78717, 232.56464, 0.0, ""),
+		(83.063675, 274.20273, 0.0, ""),
+		(527.0146, 274.823, 0.0, "M"),
+		(527.26575, 321.22736, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Spiral+%232";
+	AUTHOR = "TSa";
+	COMMENT = "Ah-ha.+Oh+yes%2C+L-pattern+is+back.+It%27s%0Ameaner%2C+it%27s+leaner%2C+it%27s+spiraller+%28%3F%29.%0A";
+	WINDOW = (624, 508);
+	RECURSE = 999;
+	REC_UNTIL = 1.0;
+	COLOUR_SHIFT = 1;
+	COLOURS_BASED_ON_ANGLE = true;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(254,24,244), (255,0,14), (65,38,177)
+	);
+
+	MAIN_PATTERN = (
+		(86.43883, 218.36974, 0.0, ""),
+		(86.61264, 246.64653, 0.0, ""),
+		(315.36298, 246.98647, 0.0, "M")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Triangle";
+	AUTHOR = "TSa";
+	COMMENT = "A+somewhat+dull+triangle+fractal.+Still%2C%0Atriangle-fanatics+might+like+it%21+%3A-%29%0A";
+	WINDOW = (624, 508);
+	RECURSE = 10;
+	REC_UNTIL = 0.5;
+	COLOUR_SHIFT = 0;
+	COLOURS_BASED_ON_ANGLE = true;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(255,255,255), (64,64,64), (255,255,255), (64,64,64)
+	);
+
+	MAIN_PATTERN = (
+		(308.14972, 92.6617, 0.0, ""),
+		(308.14972, 253.49687, 0.0, "M"),
+		(448.2818, 331.63507, 0.0, "I"),
+		(308.14972, 253.498, 0.0, "M"),
+		(167.71823, 330.20697, 0.0, "I"),
+		(307.14972, 415.33832, 0.0, "")
+	);
+);
+
+</FRACTLET>

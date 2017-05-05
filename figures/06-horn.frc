@@ -1,0 +1,25 @@
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Horn";
+	AUTHOR = "TSa";
+	COMMENT = "Mercy%21+Is+there+no+end+to+variations%0Aof+L-theme%3F+Well%2C+once+more+for+the%0Aroad%3B+this+time+we+get+something%0Athat+looks+perhaps+bit+like+a+horn%2C%0Aespecially+if+the+colour+scheme+is%0Asuitably+chosen.%0A";
+	WINDOW = (624, 508);
+	RECURSE = 99;
+	REC_UNTIL = 1.0;
+	COLOUR_SHIFT = 0;
+	COLOURS_BASED_ON_ANGLE = true;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(248,255,239), (182,189,183)
+	);
+
+	MAIN_PATTERN = (
+		(134.0, 262.0, 0.0, "U"),
+		(447.0, 262.0, 0.0, "M"),
+		(447.0, 141.0, 0.0, "")
+	);
+);
+
+</FRACTLET>

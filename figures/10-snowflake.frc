@@ -1,0 +1,45 @@
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Snowflake";
+	AUTHOR = "TSa";
+	COMMENT = "And+then+an+attempt+on+creating%0Asomething+like+a+snowflake.+Well%2C%0Anot+really+as+beautiful+as+the+real%0Aworld+snow-flakes%2C+but...%0AThe+first-level+figure+needs+to+be%0Aseparate%2C+to+produce+the+6+different%0Alines+to+begin+with%3B+after+that+there%0Aare+various+strategies+that+may+be%0Atried...%0A";
+	WINDOW = (624, 508);
+	RECURSE = 99;
+	REC_UNTIL = 1.0;
+	COLOUR_SHIFT = 0;
+	COLOURS_BASED_ON_ANGLE = true;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(255,255,255), (255,254,175), (254,253,255)
+	);
+
+	MAIN_PATTERN = (
+		(258.0, 442.0, 0.0, ""),
+		(258.0, 392.0, 0.0, ""),
+		(140.0, 306.5, 0.0, "I"),
+		(258.5, 390.75, 0.0, ""),
+		(258.0, 74.0, 0.0, "")
+	);
+	FIRST_LEVEL_PATTERN = (
+		(77.25456, 262.62012, 0.0, "M"),
+		(247.0, 262.62012, 0.0, ""),
+		(416.74542, 263.2582, 0.0, "I"),
+		(339.5304, 96.38443, 0.0, "M"),
+		(248.59537, 263.73688, 0.0, ""),
+		(162.92496, 97.900024, 0.0, "I"),
+		(165.7567, 424.0099, 0.0, "M"),
+		(247.7179, 265.13275, 0.0, ""),
+		(345.27368, 432.36554, 0.0, "")
+	);
+	SECONDARY_PATTERN = (
+		(246.0, 436.0, 0.0, ""),
+		(246.0, 373.0, 0.0, ""),
+		(398.0, 323.5, 0.0, "I"),
+		(246.5, 373.75, 0.0, ""),
+		(246.0, 70.0, 0.0, "")
+	);
+);
+
+</FRACTLET>

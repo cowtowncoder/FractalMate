@@ -1,0 +1,30 @@
+<FRACTLET VERSION=V1.04>
+# Fractlet figure definition, created with Fractlet V1.04
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 99;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "unknown";
+	COLOUR_SHIFT = 15;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "unnamed";
+	WINDOW = (637, 526);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(21,255,241), (4,54,51), (255,255,255), (5,94,88), (222,255,3), (0,0,0)
+	);
+
+	MAIN_PATTERN = (
+		(107.899994, 360.19998, 0.0, ""),
+		(182.02002, 436.19998, 0.0, ""),
+		(356.5, 227.80002, 0.0, "I"),
+		(191.62, 242.15002, 0.0, ""),
+		(342.74, 373.5, 0.0, "U"),
+		(522.98, 116.19998, 0.0, "")
+	);
+);
+
+</FRACTLET>

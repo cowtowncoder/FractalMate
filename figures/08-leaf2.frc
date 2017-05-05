@@ -1,0 +1,27 @@
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Leaf+%232";
+	AUTHOR = "TSa";
+	COMMENT = "Actually%2C+the+main+pattern+is+almost%0Aidentical+that+of+%27plant%27%2C+but+this+time%0Ano+separate+secondary+pattern+is+used.%0AThe+colour+scheme+has+been+changed%0Aa+bit+too%2C+now+the+colours+are+only+based%0Aon+the+actual+recursion+level.+Try+it%0Awith+other+settings+too.%0A";
+	WINDOW = (624, 508);
+	RECURSE = 55;
+	REC_UNTIL = 1.0;
+	COLOUR_SHIFT = 15;
+	COLOURS_BASED_ON_ANGLE = false;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(97,255,30), (0,255,0), (68,135,26), (69,177,43)
+	);
+
+	MAIN_PATTERN = (
+		(258.0, 440.0, 0.0, ""),
+		(258.0, 401.0, 0.0, ""),
+		(132.0, 299.5, 0.0, "I"),
+		(258.5, 401.75, 0.0, "U"),
+		(258.0, 74.0, 0.0, "")
+	);
+);
+
+</FRACTLET>

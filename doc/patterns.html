@@ -1,0 +1,53 @@
+<HTML>
+<HEAD>
+<TITLE>
+Patterns Fractlet uses
+</TITLE>
+<!-- Changed by: Doomdark,  17-Aug-1999 -->
+<LINK REV="made" HREF="mailto:doomdark@cc.hut.fi">
+</HEAD>
+<BODY BGCOLOR=#F0D080>
+
+<H1 ALIGN=CENTER>
+Patterns Fractlet uses
+</H1>
+
+Currently Fractlet can make use of 3 different patterns
+when drawing the fractal figures.
+
+<UL>
+<LI><B>Main pattern</B> is the default pattern, used as
+  the first level pattern (if no separate 1st level pattern
+  is used) as well as for all the other levels (if no
+  separate secondary pattern is used). When Fractlet
+  is started (or 'New' is selected from a menu) this is
+  the only pattern used, and is formed of 4 segments.
+<LI><B>First level pattern</B> is not enabled by default.
+  It can be enabled from the control panel, and when enabled
+  for the first time, will be copied from the main pattern.
+  It can be modified independent of the main pattern, and when
+  drawing the fractal figure, is taken to be the initial
+  pattern. Its line segments are then replaced using the
+  main pattern (and possibly the secondary) pattern; it will
+  not be used on other levels.
+<LI><B>Secondary pattern</B> is not enabled by default.
+  When enabled from the control panel for the first time,
+  it will be copied from the main pattern (just like
+  first level pattern). Secondary pattern will be used
+  instead of the main pattern, on every second replacement
+  level. Thus, if no separate first level pattern is used,
+  the main pattern will be used as the initial pattern; then
+  its line segments are replaced by a secondary pattern,
+  the resulting line segments are replaced by the main pattern
+  and so forth. If separate first level pattern is used, the
+  order is 'first level pattern' -&gt; 'main pattern' -&gt;
+  'secondary pattern' -&gt;  'main pattern' -&gt; and so on.
+</UL>
+
+<HR>
+
+<ADDRESS>Created by doomdark@cc.hut.fi
+<BR>Updated 17-Aug-1999</ADDRESS>
+
+</BODY>
+</HTML>

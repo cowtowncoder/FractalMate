@@ -1,0 +1,25 @@
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Wedge";
+	AUTHOR = "TSa";
+	COMMENT = "And+once+again+we+use+the+basic%0A%27L%27-pattern%2C+this+time+resulting+in%0Aa+simple+wedge.+You+can+see+how+it%0Aiterates+towards+a+solid+figure+by%0Achanging+the+maximum+recursion%0Alevel...";
+	WINDOW = (624, 508);
+	RECURSE = 99;
+	REC_UNTIL = 1.0;
+	COLOUR_SHIFT = 0;
+	COLOURS_BASED_ON_ANGLE = true;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(255,242,46), (189,126,51)
+	);
+
+	MAIN_PATTERN = (
+		(134.0, 278.0, 0.0, "U"),
+		(447.0, 278.0, 0.0, "MU"),
+		(447.0, 157.0, 0.0, "")
+	);
+);
+
+</FRACTLET>

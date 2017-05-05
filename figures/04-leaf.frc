@@ -1,0 +1,25 @@
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Leaf";
+	AUTHOR = "TSa";
+	COMMENT = "Another+variation+of+the+%27L%27-theme%3B%0Aresults+in+something...+Um%2C+perhaps%0Abit+like+a+leaf%3F%0A";
+	WINDOW = (624, 508);
+	RECURSE = 100;
+	REC_UNTIL = 1.0;
+	COLOUR_SHIFT = 0;
+	COLOURS_BASED_ON_ANGLE = true;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(252,255,101), (0,255,0), (0,178,0), (0,255,0)
+	);
+
+	MAIN_PATTERN = (
+		(79.0, 317.0, 0.0, ""),
+		(213.0, 317.0, 0.0, "MU"),
+		(213.0, 118.0, 0.0, "")
+	);
+);
+
+</FRACTLET>

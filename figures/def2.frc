@@ -1,0 +1,31 @@
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Spruce";
+	AUTHOR = "TSa";
+	COMMENT = "By+combining+two+%27dragons%27+%28easiest%0Adone+by+using+just+1+double-sided%0Aline+at+the+1st+level%29+I+got+a+spruce%0Adone...";
+	WINDOW = (624, 508);
+	RECURSE = 99;
+	REC_UNTIL = 1.0;
+	COLOUR_SHIFT = 0;
+	COLOURS_BASED_ON_ANGLE = true;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(0,178,0), (0,255,0), (255,144,0), (0,255,0)
+	);
+
+	MAIN_PATTERN = (
+		(118.0, 244.21259, 0.0, ""),
+		(324.0, 244.21259, 0.0, ""),
+		(519.0, 189.80316, 0.0, "U"),
+		(495.0, 246.21259, 0.0, "I"),
+		(452.0, 251.21259, 0.0, "")
+	);
+	FIRST_LEVEL_PATTERN = (
+		(255.46373, 19.33757, 0.0, "D"),
+		(254.0202, 290.67816, 0.0, "U")
+	);
+);
+
+</FRACTLET>

@@ -1,0 +1,25 @@
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Curly";
+	AUTHOR = "TSa";
+	COMMENT = "A+simple+%27L%27+pattern+results+in+various%0Aquite+different+figures%3B+one+is+a+curly%0Athing+shown+here.+It+all+depends+on%0Adirections+%28ie+mirrored%2Fupside+down%29%0Aof+the+2+lines%2C+as+well+as+their+relative%0Alengths.+Compare+this+to+%27horn%27%0Aand+%27wedge%27+to+see+variations...";
+	WINDOW = (624, 508);
+	RECURSE = 55;
+	REC_UNTIL = 1.0;
+	COLOUR_SHIFT = 0;
+	COLOURS_BASED_ON_ANGLE = true;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(255,255,0), (0,255,0), (255,255,0), (255,0,0)
+	);
+
+	MAIN_PATTERN = (
+		(187.0, 349.0, 0.0, ""),
+		(321.0, 349.0, 0.0, ""),
+		(321.0, 150.0, 0.0, "")
+	);
+);
+
+</FRACTLET>

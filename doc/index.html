@@ -1,0 +1,102 @@
+<HTML>
+<HEAD>
+<TITLE>Fractlet Help Index</TITLE>
+<!-- Changed by: Doomdark,  17-Aug-1999 -->
+<LINK REV="made" HREF="mailto:doomdark@cc.hut.fi">
+</HEAD>
+<BODY BGCOLOR=#F0D080>
+
+<H1 ALIGN=CENTER>Fractlet Help System</H1>
+
+Fractlet is a simple Java-application that draws fractals
+based on the line figures you define. It can be run both
+as a stand-alone application and as an applet.
+<BR><BR>
+To be able to run it as an application you need to have
+a Java Virtual Machine (JVM); this can be gotten ie. from
+JavaSoft (www.javasoft.com) as well as from various other sources.
+To run Fractlet as an applet, your browser needs to support Java 1.1;
+currently newer versions of Netscape Communicator (4.5 / 4.05
+onwards) should do, as well as Internet Explorer 4 and 5.
+At the time of writing, IE 5 with the JVM updates seems to
+offer the best execution environment (sic!).
+
+<H2 ALIGN=CENTER>Introduction</H2>
+
+Fractlet draws fractal figures based on one or
+<A HREF="terms.html#pattern">patterns</A> (the terms are
+explained in the <A HREF="terms.html">terminology page</A>),
+which consist of number of points connecteded to each other.<BR>
+The segments of the first-level pattern are replaced, one by one,
+by another pattern, which may be the same pattern as the first level
+pattern or different. The various patterns used are explained in section
+<A HREF="patterns.html">'Patterns'</A>).<BR>
+The replacement process is repeated recursively up to a configurable
+threshold (by defualt, the limit is that the line segments that have
+length of 1.0 or less are not replaced, but are drawn to the screen;
+in addition, the maximum number of replacements per segment is defined
+globally to be 99). The recursion limit, as well as various other
+drawing properties, are explained in
+<A HREF="ui.html">user interface</A> section.
+<P>
+A simple example is the fractal figure that you get if you simply
+press Draw-button when Fractlet starts. The default line figure
+looks like this:
+<BR><BR>
+<PRE>
+       /\
+      /  \
+_____/    \_____
+</PRE>
+<BR><BR>
+
+On the first round, each line segment is replaced by the same line
+figure, and so we'll get something like:
+<BR><BR>
+<PRE>
+     _/\_
+    |    |
+_/\_/    \_/\__
+</PRE>
+<BR><BR>
+When this process is repeated to the limit, the resulting figure
+is much more varied; you can easily test it by pressing 'Draw'.
+<BR><BR>
+The colours of the fractal figure are calculated using two
+methods, which can be combined: the first uses the line angles,
+and the second uses the level at which the line segment reached
+the end-of-replacement limit. The exact procedure is explained in
+section <A HREF="colours.html">'Defining colours'</A>)
+<BR><BR>
+And that's about it. Although the basic idea is very simple, the
+resulting fractal figures are often quite complex. Fractlet comes
+with a set of 'default fractal figures'; if you run Fractlet as
+an application they can loaded from the sub-directory 'figures/',
+if you run Fractlet as an applet, they can be selected from
+the Choice-box on the control panel. Some small comments have
+been added to fractals; be sure to check 'Figure Props'
+('Props'-button on 'Figure'-part of the control panel) to view
+them.
+
+<H2 ALIGN=CENTER>Usage</H2>
+
+To understand the fractlet user interface, it's first necessary to 
+understand how fractal figures are created from the patterns.
+This is explained in section <A HREF="patterns.html">'Patterns'</A>.
+<BR><BR>
+The fractlet user interface (controls in the main fractlet window,
+menus, popup menus) is explained in
+<A HREF="ui.html">user interface</A> section.
+<BR><BR>
+There are also certain operations that can be invoked directly
+from the keyboard (in some cases only from there, as there are no
+menu or popup menu entries). These are explained in section
+ <A HREF="keyboard.html">'Keyboard operations'</A>.
+
+<HR>
+
+<ADDRESS>Created by doomdark at iki dot fi
+<BR>Updated 17-Aug-1999</ADDRESS>
+
+</BODY>
+</HTML>

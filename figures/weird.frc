@@ -1,0 +1,44 @@
+<FRACTLET VERSION=V1.01>
+# Fractlet figure definition, created with Fractlet V1.01
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "Much+like+dragon...uses+two+alternating%0Apatterns";
+	REC_UNTIL = 1.0;
+	RECURSE = 111;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 8;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "Dragonstar";
+	WINDOW = (599, 526);
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(255,3,16), (0,0,0), (84,113,254), (0,0,0)
+	);
+
+	MAIN_PATTERN = (
+		(138.09674, 354.82776, 0.0, "U"),
+		(117.21167, 354.9641, 0.0, ""),
+		(117.21167, 331.22144, 0.0, ""),
+		(302.26715, 400.22144, 0.0, ""),
+		(307.21072, 354.9641, 0.0, "U"),
+		(346.95612, 354.9641, 0.0, "")
+	);
+	FIRST_LEVEL_PATTERN = (
+		(430.70752, 266.1083, 0.0, ""),
+		(361.61224, 383.47656, 0.0, ""),
+		(238.745, 383.52417, 0.0, ""),
+		(167.51459, 260.7965, 0.0, ""),
+		(237.38708, 143.47583, 0.0, ""),
+		(357.83054, 144.08432, 0.0, ""),
+		(431.4854, 265.5052, 0.0, "MU")
+	);
+	SECONDARY_PATTERN = (
+		(19.09674, 278.82776, 0.0, ""),
+		(289.21167, 341.9641, 0.0, ""),
+		(300.21072, 279.9641, 0.0, "MU")
+	);
+);
+
+</FRACTLET>

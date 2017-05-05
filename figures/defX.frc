@@ -1,0 +1,862 @@
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 99;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 8;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "4-way+spiral";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(255,0,0), (141,0,0), (254,255,0)
+	);
+
+	MAIN_PATTERN = (
+		(57.687775, 267.3803, 0.0, "M"),
+		(451.69794, 410.46942, 0.0, "IM"),
+		(452.1496, 194.47858, 0.0, ""),
+		(388.3478, 385.9447, 0.0, "MU"),
+		(536.0995, 336.9503, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 99;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 8;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "6Star";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(255,0,0), (255,255,0)
+	);
+
+	MAIN_PATTERN = (
+		(197.31757, 276.2188, 0.0, ""),
+		(217.0372, 276.2188, 0.0, ""),
+		(217.0372, 242.78119, 0.0, ""),
+		(466.53333, 242.78119, 0.0, ""),
+		(465.67596, 276.2188, 0.0, ""),
+		(489.68243, 276.2188, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 99;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 5;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "Black+hole";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(0,0,0), (16,255,0), (0,0,0), (254,255,0), (0,0,0), (255,0,5)
+	);
+
+	MAIN_PATTERN = (
+		(77.343994, 349.6875, 0.0, "M"),
+		(532.1033, 225.10501, 0.0, "IM"),
+		(349.0, 184.3125, 0.0, ""),
+		(430.49683, 349.6875, 0.0, "MU"),
+		(620.656, 349.6875, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 99;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 5;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "Dragon+spiral";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(1,0,0), (255,0,0), (254,255,0)
+	);
+
+	MAIN_PATTERN = (
+		(182.58392, 419.8454, 0.0, ""),
+		(514.4789, 203.18672, 0.0, ""),
+		(395.49582, 190.15462, 0.0, "I"),
+		(480.95386, 341.65277, 0.0, ""),
+		(586.416, 264.2747, 0.0, "")
+	);
+	FIRST_LEVEL_PATTERN = (
+		(154.64447, 384.70367, 0.0, "M"),
+		(348.0959, 293.56622, 0.0, "IM"),
+		(541.3751, 404.31577, 0.0, "M"),
+		(344.44516, 292.8583, 0.0, "IM"),
+		(345.74222, 74.52463, 0.0, "M"),
+		(344.29065, 289.42816, 0.0, "I")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Dragonstar";
+	AUTHOR = "TSa";
+	COMMENT = "Much+like+dragon...uses+two+alternating%0Apatterns";
+	WINDOW = (813, 787);
+	RECURSE = 111;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(255,4,17), (254,166,6), (254,248,13)
+	);
+
+	MAIN_PATTERN = (
+		(245.09674, 484.82776, 0.0, "U"),
+		(224.21167, 484.9641, 0.0, ""),
+		(224.21167, 461.22144, 0.0, ""),
+		(414.26715, 461.22144, 0.0, ""),
+		(414.21072, 484.9641, 0.0, "U"),
+		(453.95612, 484.9641, 0.0, "")
+	);
+	FIRST_LEVEL_PATTERN = (
+		(576.0667, 396.87085, 0.0, ""),
+		(486.7711, 548.55237, 0.0, ""),
+		(327.98294, 548.6139, 0.0, ""),
+		(235.92795, 390.00613, 0.0, ""),
+		(326.22803, 238.38612, 0.0, ""),
+		(481.88382, 239.1725, 0.0, ""),
+		(577.0721, 396.0914, 0.0, "MU")
+	);
+	SECONDARY_PATTERN = (
+		(126.09674, 408.82776, 0.0, ""),
+		(403.21167, 371.9641, 0.0, ""),
+		(407.21072, 409.9641, 0.0, "MU")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 32;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 0;
+	COLOURS_BASED_ON_ANGLE = true;
+	NAME = "Tulikasvi";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(255,0,0), (255,255,0)
+	);
+
+	MAIN_PATTERN = (
+		(364.32208, 486.258, 0.0, "U"),
+		(364.32208, 313.7779, 0.0, ""),
+		(244.32208, 268.81778, 0.0, "I"),
+		(363.82205, 313.3378, 0.0, "U"),
+		(363.57205, 206.5979, 0.0, ""),
+		(302.7908, 134.7554, 0.0, "I"),
+		(363.00955, 203.91292, 0.0, ""),
+		(424.44705, 91.227936, 0.0, "I"),
+		(364.32217, 204.85791, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 99;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 10;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "Shrimp";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(255,172,248), (255,70,150), (254,255,250)
+	);
+
+	MAIN_PATTERN = (
+		(138.6, 438.0, 0.0, ""),
+		(551.08, 325.0, 0.0, ""),
+		(385.0, 288.0, 0.0, ""),
+		(458.92, 438.0, 0.0, ""),
+		(631.39996, 438.0, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 99;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 0;
+	COLOURS_BASED_ON_ANGLE = true;
+	NAME = "Triangular";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(255,0,0), (255,255,0)
+	);
+
+	MAIN_PATTERN = (
+		(70.6, 326.0, 0.0, ""),
+		(290.08002, 326.0, 0.0, "I"),
+		(232.0, 173.0, 0.0, ""),
+		(482.92, 174.0, 0.0, "I"),
+		(417.15997, 326.0, 0.0, ""),
+		(603.39996, 326.0, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 99;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 20;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "Coral";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(25,30,255), (255,0,241), (255,7,35)
+	);
+
+	MAIN_PATTERN = (
+		(230.6, 195.0, 0.0, ""),
+		(450.08002, 195.0, 0.0, "I"),
+		(279.0, 352.0, 0.0, ""),
+		(564.92004, 354.0, 0.0, "I"),
+		(373.15997, 424.0, 0.0, ""),
+		(554.39996, 424.0, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 199;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 8;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "Golden";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(255,182,5), (0,0,0), (255,234,0), (0,0,0)
+	);
+
+	MAIN_PATTERN = (
+		(246.6756, 264.1587, 0.0, ""),
+		(441.00443, 403.90768, 0.0, ""),
+		(412.82172, 471.84125, 0.0, "MU"),
+		(380.27185, 426.71393, 0.0, ""),
+		(388.75378, 468.4446, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 99;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 10;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "Flatworm";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(253,22,20), (0,0,0), (0,255,79), (0,0,0)
+	);
+
+	MAIN_PATTERN = (
+		(107.600006, 62.0, 0.0, ""),
+		(551.08, 325.0, 0.0, ""),
+		(350.0, 460.0, 0.0, "M"),
+		(458.92, 438.0, 0.0, ""),
+		(631.39996, 438.0, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 99;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 0;
+	COLOURS_BASED_ON_ANGLE = true;
+	NAME = "Wineleaf";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(0,81,1), (0,255,0)
+	);
+
+	MAIN_PATTERN = (
+		(90.600006, 291.0, 0.0, ""),
+		(250.08002, 389.0, 0.0, "U"),
+		(324.0, 239.0, 0.0, "U"),
+		(490.92, 310.0, 0.0, ""),
+		(385.39996, 308.0, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 99;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 8;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "Moss+spiral";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(1,70,1), (0,255,0), (136,76,0), (0,191,0)
+	);
+
+	MAIN_PATTERN = (
+		(57.687775, 163.38031, 0.0, "M"),
+		(451.69794, 306.46942, 0.0, "IM"),
+		(452.1496, 90.47858, 0.0, "MU"),
+		(388.3478, 281.9447, 0.0, "U"),
+		(482.0995, 390.9503, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 99;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 45;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "Electricity";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(47,15,255), (0,0,0), (255,15,228)
+	);
+
+	MAIN_PATTERN = (
+		(66.0, 461.19998, 0.0, ""),
+		(346.59998, 237.19998, 0.0, ""),
+		(314.0, 305.80002, 0.0, ""),
+		(388.4, 461.19998, 0.0, ""),
+		(510.0, 289.19998, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 99;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 10;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "Grain";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(255,183,6), (0,0,0), (255,234,0), (0,0,0)
+	);
+
+	MAIN_PATTERN = (
+		(107.600006, 62.0, 0.0, ""),
+		(508.08002, 350.0, 0.0, ""),
+		(450.0, 490.0, 0.0, "M"),
+		(382.92, 397.0, 0.0, ""),
+		(537.39996, 450.0, 0.0, "")
+	);
+	FIRST_LEVEL_PATTERN = (
+		(165.8801, 60.029907, 0.0, ""),
+		(488.38, 396.28992, 0.0, "I"),
+		(440.88, 24.55011, 0.0, "U"),
+		(143.88, 430.63007, 0.0, "M")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 99;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 30;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "Red+%26+Green";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(255,0,5), (87,9,35), (28,255,4), (2,106,8)
+	);
+
+	MAIN_PATTERN = (
+		(276.6, 465.0, 0.0, ""),
+		(207.08, 378.0, 0.0, ""),
+		(158.0, 255.0, 0.0, ""),
+		(344.92, 368.0, 0.0, "U"),
+		(527.39996, 78.0, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 99;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 13;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "Sulphur+%232";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(189,234,0), (97,97,0), (21,46,0), (0,203,78)
+	);
+
+	MAIN_PATTERN = (
+		(125.291855, 240.04686, 0.0, "M"),
+		(357.05765, 350.24686, 0.0, "I"),
+		(422.18585, 239.33437, 0.0, "U"),
+		(308.71408, 328.15936, 0.0, "I"),
+		(475.7544, 381.2644, 0.0, "U"),
+		(517.14215, 334.76187, 0.0, "I"),
+		(304.13593, 93.96065, 0.0, ""),
+		(508.1798, 336.70935, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 99;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 13;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "Sulphur";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(189,234,0), (97,97,0), (21,46,0), (0,203,78)
+	);
+
+	MAIN_PATTERN = (
+		(82.98001, 224.17499, 0.0, "U"),
+		(326.944, 340.175, 0.0, "I"),
+		(96.5, 212.42499, 0.0, "U"),
+		(124.05603, 196.92499, 0.0, "I"),
+		(451.88794, 372.825, 0.0, ""),
+		(495.45398, 323.875, 0.0, "I"),
+		(271.23694, 70.400024, 0.0, ""),
+		(486.01996, 325.925, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 99;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 10;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "3d+Horn";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(253,22,20), (0,0,0), (0,255,79), (0,0,0)
+	);
+
+	MAIN_PATTERN = (
+		(174.98688, 115.929, 0.0, ""),
+		(498.2838, 307.656, 0.0, ""),
+		(351.69647, 406.07098, 0.0, "M"),
+		(537.5332, 308.385, 0.0, ""),
+		(507.26508, 406.07098, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 111;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 8;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "Slowfire";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(91,253,0), (0,0,0), (230,253,0), (255,24,0)
+	);
+
+	MAIN_PATTERN = (
+		(270.6756, 249.15869, 0.0, ""),
+		(470.5834, 244.40955, 0.0, ""),
+		(539.8217, 322.84125, 0.0, "IMU"),
+		(470.5834, 244.40955, 0.0, "U"),
+		(473.5834, 106.909546, 0.0, "IU"),
+		(491.3791, 209.17615, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 111;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 8;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "Slow";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(91,253,0), (0,0,0), (230,253,0), (255,24,0)
+	);
+
+	MAIN_PATTERN = (
+		(270.6756, 249.15869, 0.0, ""),
+		(470.5834, 244.40955, 0.0, ""),
+		(607.8217, 249.84125, 0.0, "IMU"),
+		(470.5834, 244.40955, 0.0, "U"),
+		(473.5834, 106.909546, 0.0, "IU"),
+		(491.3791, 209.17615, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Spiral";
+	AUTHOR = "TSa";
+	COMMENT = "A+wonderful+fractal%3B+from+a+simple+main%0Apattern+a+complex+figure+is+drawn.%0AColour+shifting%27s+effects+can+also+be%0Aseen+easily.%0AYou+can+try+to+move+the+lines+around%0Ato+check+how+the+figure+is+changed.%0AThis+fractal+is+also+a+very+%27deep%27+one%3B%0Arecurses+down+to+%7E300+levels+on%0Athe+default+set+up.";
+	WINDOW = (616, 508);
+	RECURSE = 500;
+	REC_UNTIL = 1.0;
+	COLOUR_SHIFT = 1;
+	COLOURS_BASED_ON_ANGLE = true;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(254,247,9), (255,1,14)
+	);
+
+	MAIN_PATTERN = (
+		(82.78717, 232.56464, 0.0, ""),
+		(83.063675, 274.20273, 0.0, ""),
+		(527.0146, 274.823, 0.0, "M"),
+		(527.26575, 321.22736, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 99;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 20;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "Stardust";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(0,0,0), (16,255,0), (0,0,0), (254,255,0), (0,0,0), (255,0,5)
+	);
+
+	MAIN_PATTERN = (
+		(77.343994, 349.6875, 0.0, "M"),
+		(532.1033, 225.10501, 0.0, "IM"),
+		(349.0, 184.3125, 0.0, ""),
+		(430.49683, 349.6875, 0.0, "MU"),
+		(620.656, 349.6875, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 99;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 10;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "Feather";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(0,4,38), (255,179,225)
+	);
+
+	MAIN_PATTERN = (
+		(318.94305, 259.69388, 0.0, "IM"),
+		(197.99326, 385.3576, 0.0, "U"),
+		(417.07507, 341.48752, 0.0, "U"),
+		(417.75006, 296.27496, 0.0, ""),
+		(646.67114, 257.05475, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 99;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 10;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "Tentacle";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(71,42,203), (255,58,241), (203,19,49)
+	);
+
+	MAIN_PATTERN = (
+		(138.6, 438.0, 0.0, ""),
+		(551.08, 325.0, 0.0, ""),
+		(385.0, 288.0, 0.0, "M"),
+		(458.92, 438.0, 0.0, ""),
+		(631.39996, 438.0, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 99;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 10;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "Dragon%27s+tail";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(255,0,0), (255,255,0)
+	);
+
+	MAIN_PATTERN = (
+		(150.6, 301.0, 0.0, ""),
+		(563.08, 188.0, 0.0, ""),
+		(397.0, 151.0, 0.0, ""),
+		(576.92004, 90.0, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 99;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 8;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "Firecicle";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(255,0,0), (141,0,0), (254,255,0)
+	);
+
+	MAIN_PATTERN = (
+		(57.687775, 267.3803, 0.0, "U"),
+		(451.69794, 410.46942, 0.0, "IM"),
+		(452.1496, 194.47858, 0.0, "M"),
+		(388.3478, 385.9447, 0.0, "MU"),
+		(536.0995, 336.9503, 0.0, "")
+	);
+);
+
+</FRACTLET>
+<FRACTLET VERSION=V1.05>
+# Fractal figure definition, created with Fractalizer V1.05
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "-";
+	REC_UNTIL = 1.0;
+	RECURSE = 111;
+	PREVENT_MULTIDRAW = true;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 8;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "Weird-o";
+	WINDOW = (674, 508);
+	BACKGROUND = (0,0,0);
+	PALETTE = (
+		(255,3,16), (0,0,0), (84,113,254), (0,0,0)
+	);
+
+	MAIN_PATTERN = (
+		(175.09674, 345.82776, 0.0, "U"),
+		(154.21167, 345.9641, 0.0, ""),
+		(154.21167, 322.22144, 0.0, ""),
+		(339.26715, 391.22144, 0.0, ""),
+		(344.21072, 345.9641, 0.0, "U"),
+		(383.95612, 345.9641, 0.0, "")
+	);
+	FIRST_LEVEL_PATTERN = (
+		(467.70752, 257.1083, 0.0, ""),
+		(398.61224, 374.47656, 0.0, ""),
+		(275.745, 374.52417, 0.0, ""),
+		(204.51459, 251.79651, 0.0, ""),
+		(274.3871, 134.47583, 0.0, ""),
+		(394.83054, 135.08432, 0.0, ""),
+		(468.4854, 256.5052, 0.0, "MU")
+	);
+	SECONDARY_PATTERN = (
+		(56.09674, 269.82776, 0.0, ""),
+		(326.21167, 332.9641, 0.0, ""),
+		(337.21072, 270.9641, 0.0, "MU")
+	);
+);
+
+</FRACTLET>

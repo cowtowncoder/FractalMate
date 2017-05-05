@@ -1,0 +1,27 @@
+<FRACTLET VERSION=V1.01>
+# Fractlet figure definition, created with Fractlet V1.01
+
+FIGURE = (
+	DRAW_INTERMEDIATE = false;
+	COMMENT = "Ah-ha.+Oh+yes%2C+L-pattern+is+back.+It%27s%0Ameaner%2C+it%27s+leaner%2C+it%27s+spiraller+%28%3F%29.%0A";
+	PREVENT_MULTI_DRAW = true;
+	REC_UNTIL = 1.0;
+	RECURSE = 996;
+	AUTHOR = "TSa";
+	COLOUR_SHIFT = 3;
+	COLOURS_BASED_ON_ANGLE = false;
+	NAME = "Spiral+%232";
+	WINDOW = (624, 508);
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(254,24,244), (255,0,14), (65,38,177)
+	);
+
+	MAIN_PATTERN = (
+		(86.43883, 218.36974, 0.0, ""),
+		(86.61264, 246.64653, 0.0, ""),
+		(315.36298, 246.98647, 0.0, "M")
+	);
+);
+
+</FRACTLET>

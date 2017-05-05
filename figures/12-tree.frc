@@ -1,0 +1,32 @@
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Tree";
+	AUTHOR = "TSa";
+	COMMENT = "One+fractal+that+looks+perhaps+better%0Aif+the+fractal+is+NOT+iterated+too%0Amuch.+The+result+looks+a+bit+like%0Aa+tree.";
+	WINDOW = (624, 508);
+	RECURSE = 8;
+	REC_UNTIL = 1.0;
+	COLOUR_SHIFT = 0;
+	COLOURS_BASED_ON_ANGLE = true;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(18,255,44), (255,119,15), (68,177,28), (255,104,47)
+	);
+
+	MAIN_PATTERN = (
+		(54.0, 454.0, 0.0, ""),
+		(276.0, 453.0, 0.0, "D"),
+		(382.0, 360.0, 0.0, "I"),
+		(278.0, 452.0, 0.0, ""),
+		(410.0, 452.0, 0.0, "I"),
+		(333.0, 452.0, 0.0, "")
+	);
+	FIRST_LEVEL_PATTERN = (
+		(251.0, 382.5267, 0.0, "D"),
+		(251.0, 132.47328, 0.0, "")
+	);
+);
+
+</FRACTLET>

@@ -1,0 +1,24 @@
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "A+flame";
+	AUTHOR = "unknown";
+	COMMENT = "-";
+	WINDOW = (508, 508);
+	RECURSE = 12;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(255,0,0), (255,255,0)
+	);
+
+	MAIN_PATTERN = (
+		(53.83589, 348.16235, 0.0, ""),
+		(304.4338, 348.16235, 0.0, ""),
+		(304.4338, 116.36632, 0.0, "I"),
+		(301.7536, 346.82217, 0.0, ""),
+		(449.16412, 507.63373, 0.0, "")
+	);
+);
+
+</FRACTLET>

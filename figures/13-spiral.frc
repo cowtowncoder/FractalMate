@@ -1,0 +1,26 @@
+<FRACTLET VERSION=V1.00>
+# Fractlet figure definition, created with Fractlet V1.00
+
+FIGURE = (
+	NAME = "Spiral";
+	AUTHOR = "TSa";
+	COMMENT = "A+wonderful+fractal%3B+from+a+simple+main%0Apattern+a+complex+figure+is+drawn.%0AColour+shifting%27s+effects+can+also+be%0Aseen+easily.%0AYou+can+try+to+move+the+lines+around%0Ato+check+how+the+figure+is+changed.%0AThis+fractal+is+also+a+very+%27deep%27+one%3B%0Arecurses+down+to+%7E300+levels+on%0Athe+default+set+up.%0AFinally%2C+note+that+the+spiral+characteristics%0Acan+be+achieved+by+a+simple+%27L%27-pattern%0Atoo+%28revenge+of+%27L%27-pattern%3F%29%2C+you+can+try%0Ait+by+removing+one+of+the+smaller+line%0Asegments.";
+	WINDOW = (624, 508);
+	RECURSE = 500;
+	REC_UNTIL = 1.0;
+	COLOUR_SHIFT = 1;
+	COLOURS_BASED_ON_ANGLE = true;
+	BACKGROUND = (0,0,0);
+			PALETTE = (
+		(254,247,9), (255,1,14)
+	);
+
+	MAIN_PATTERN = (
+		(82.78717, 232.56464, 0.0, ""),
+		(83.063675, 274.20273, 0.0, ""),
+		(527.0146, 274.823, 0.0, "M"),
+		(527.26575, 321.22736, 0.0, "")
+	);
+);
+
+</FRACTLET>

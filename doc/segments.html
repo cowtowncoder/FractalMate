@@ -1,0 +1,55 @@
+<HTML>
+<HEAD>
+<TITLE>Line segment properties</TITLE>
+<!-- Changed by: Doomdark,  17-Aug-1999 -->
+<LINK REV="made" HREF="mailto:doomdark@cc.hut.fi">
+</HEAD>
+<BODY BGCOLOR=#F0D080>
+
+<H1 ALIGN=CENTER>
+Line segment properties
+</H1>
+The line segments that form patterns have various properties; most are simple on/off
+ flags that are displayed by various symbols (unless this option is turned off).
+ Line segment properties are:
+
+  <UL>
+  <LI><B>Invisibility</B>. Invisible lines segments are not drawn nor recursively
+   replaced. They only connect other line segment. Invisible line segments are
+   sometimes necessary for creating more interesting patterns; otherwise it would
+   be impossible to create disjoint segment figures.
+
+  <LI><B>Upside down</B>. If this property is set, the replacement
+    of the line segment is mirrored in respect to the x-axis (x-axis meaning the
+    axis that goes through the begin and end points of the line segment). The
+    easiest way to see what this actually means is to change the state of this
+    property, and let Fractlet draw the resulting fractal.
+
+  <LI><B>Mirrored</B>.
+   Similar to the above, if this property is
+    set, the replacement is mirrored in respect to the middle point of the
+    line segment. In practice this means 'switching' the begin and end point
+    of the line segment. 'Upside down' and 'Mirrored' may be combined, and
+    so there are basically 4 ways to do the replacement.
+
+  <LI><B>Double-sided</B>: If this property is set, the line segment
+    is 'replaced twice'; ie. it's equivalent to having 2 line segments that
+    are otherwise identical, but the one has 'Upside down' property set and
+    the other not. Use with care, as this slows down the drawing exponentially;
+    often this property is used only on the first-level pattern.
+
+  <LI><B>Final</B>:
+    If this property is set, the line segment
+    is final, ie. it will not be recursively repeated; it is as if its length
+    had reached the limit. This property is often set for various short
+    line segments, that would otherwise produce unwanted artifacts. Usually
+    the alternative would be to make the line segment invisible.
+  </UL>
+
+<HR>
+
+<ADDRESS>Created by doomdark@cc.hut.fi
+<BR>Updated 17-Aug-1999</ADDRESS>
+
+</BODY>
+</HTML>

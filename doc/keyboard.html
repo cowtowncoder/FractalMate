@@ -1,0 +1,54 @@
+<HTML>
+<HEAD>
+<TITLE>
+Fractlet keyboard operations
+</TITLE>
+<!-- Changed by: Doomdark,  17-Aug-1999 -->
+<LINK REV="made" HREF="mailto:doomdark@cc.hut.fi">
+</HEAD>
+<BODY BGCOLOR=#F0D080>
+
+<H1 ALIGN=CENTER>
+Fractlet keyboard operations
+</H1>
+Some operations can only be invoked via keyboard. All these operations modify
+patterns, and thus the view panel of the main Fractlet window has to display
+one of the patterns, not the fractal figure. In addition, the Fractlet window
+has to have the keyboard focus; depending on the platform this may mean that
+the mouse pointer is over the window, or that the main Fractlet window needs
+to be clicked to let it have the focus.
+<BR><BR>
+The operations available are:
+
+  <UL>
+  <LI><B>Pattern rotation</B>. By pressing '*' and '/' (asterisk, or multiply, 
+   and slash, or divide) buttons you can rotate the pattern along its center
+   point. '/' rotates clockwise and '*' counterclockwise. The default rotation
+   is one angle; you can increase the step to 5, 15 or 45 angles by pressing
+   'shift', 'control' or 'alt' (respectively). Another way to rotate the
+   pattern along a selected line segment end point is to select the end point,
+   and then drag another end point while pressing 'ctrl'-key. This results in the
+   pattern rotating along the selected end point, in the direction specified by
+   mouse dragging. You can select more than one end point, in which case the middle
+   point for rotation is the center (weighed center point) of the selected points
+  (this means that if you selected all the points, the rotation is identical to
+   normal rotation).
+  <LI><B>Pattern scaling</B>. By pressing '+' and '-', you can enlarge or shrink
+   the pattern. The default change is 4 percent enlargement/shrinking; you can
+   do bigger changes by pressing 'shift'/'ctrl'/'alt' keys; this changes the step
+   to 10, 25 or 50 percents.
+  <LI><B>Pattern translation</B>. (or simply 'pattern moving'). By pressing one
+   of the arrow keys, or the number keys on the number pad, you can move the pattern
+   to the direction indicated. The default step is 1 pixel in the direction; this
+   can be changed to 4, 16 or 64 pixels with 'shift'/'ctrl'/'alt'-keys.
+  </UL>
+
+  Note that keyboard operations are undoable (and redoable) like the normal
+  menu / popup menu operations.
+<HR>
+
+<ADDRESS>Created by doomdark@cc.hut.fi
+<BR>Updated 17-Aug-1999</ADDRESS>
+
+</BODY>
+</HTML>
