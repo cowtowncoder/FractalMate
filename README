@@ -1,5 +1,9 @@
-	GENERAL
-	-------
+Update on 04-May-2017: This is the original README from circa 1999 -- I am slowly
+trying to update this package, but for now enjoy this historical artifact!
+
+-----
+
+# GENERAL
 
 FractalMate (nee Fractlet) is a simple application/applet that draws figures by recursively
 replacing the individual line segments of the original wireframe pattern
@@ -7,8 +11,7 @@ by copies of the pattern. The resulting figure is called fractal, as its
 properties do not change when zooming closer in, ie. no matter for close
 you look, the same patterns and figures can be found at every level.
 
-	COMPATIBILITY
-	-------------
+# COMPATIBILITY
 
 FractalMate is written in pure Java, and in theory should be run on any
 Java-platform. It has been developed on a Red Hat based x86 Linux PC
@@ -49,8 +52,7 @@ to run FractalMate. These include:
   Netscape/Symantec were not able to produce a better VM. A shame really.
 
 
-	LICENSING, COPYRIGHT etc
-	------------------------
+# LICENSING, COPYRIGHT etc
 
 FractalMate is copyright by me (Tatu Saloranta, tatu.saloranta@iki.fi), but
 the source code is itself is open source, in that its freely available,
@@ -70,10 +72,7 @@ The program code and the application itself is provided 'as is'.
 If you manage to hurt yourself by using the application, you must be a
 real genius. :-p 
 
-
-
-	FEEDBACK
-	--------
+# FEEDBACK
 
 I wrote FractalMate for fun. I hope you use it for fun, or education or
 something. Some fractals are oddly beautiful, and probably could be used
@@ -102,8 +101,7 @@ for producing some nice graphics. I would appreciate it if:
   recursion from the drawing, no significant change in drawing time)
 
 
-	FUTURE IDEAS
-	------------
+# FUTURE IDEAS
 
 I have some ideas that I might be able to implement in the future.
 Such ideas include:
@@ -120,4 +118,3 @@ Such ideas include:
   which fractal to use for replacements.
 - Scenes that would consist of actual fractal images... Think of a forest
   that consists of trees, each being a single fractal figure.
-
